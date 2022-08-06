@@ -11,6 +11,8 @@ import { TitleComponent } from './components/title/title.component';
 import { TextComponent } from './components/text/text.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PlatformSectionComponent } from './components/platform-section/platform-section.component';
+import { WhyChooseEnvorSectionComponent } from './components/why-choose-envor-section/why-choose-envor-section.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { PlatformSectionComponent } from './components/platform-section/platform
     TitleComponent,
     TextComponent,
     HeaderComponent,
-    PlatformSectionComponent
+    PlatformSectionComponent,
+    WhyChooseEnvorSectionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
