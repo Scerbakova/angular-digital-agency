@@ -9,4 +9,7 @@ export class LinkComponent {
 
   @Input()
   label = 'Home';
+
+  @Input()
+  link = "";
 }

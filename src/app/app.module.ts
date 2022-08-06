@@ -13,6 +13,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { PlatformSectionComponent } from './components/platform-section/platform-section.component';
 import { WhyChooseEnvorSectionComponent } from './components/why-choose-envor-section/why-choose-envor-section.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { ServicePageComponent } from './pages/service-page/service-page.component';
+import { OurProjectPageComponent } from './pages/our-project-page/our-project-page.component';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     TextComponent,
     HeaderComponent,
     PlatformSectionComponent,
-    WhyChooseEnvorSectionComponent
+    WhyChooseEnvorSectionComponent,
+    HomePageComponent,
+    ServicePageComponent,
+    OurProjectPageComponent,
+    AboutPageComponent,
   ],
   imports: [
     BrowserModule,

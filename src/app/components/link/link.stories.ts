@@ -5,7 +5,7 @@ export default {
   title: 'DigitalAgency/Atoms/Link',
   decorators: [
     componentWrapperDecorator(
-      (stories) => `<div style='backgroundColor: #19191b; height: 100vh; width: 100vw; display: flex; justifyContent: center; alignItems: center'>${stories}</div>`
+      (stories) => `<div style='backgroundColor: #19191b; height: 100vh; width: 100vw; display: flex; justifyContent: center; alignItems: center; list-style: none'>${stories}</div>`
     ),
   ],
   component: LinkComponent,

@@ -8,7 +8,7 @@ import { NavigationComponent } from '../navigation/navigation.component';
 import { HeaderComponent } from './header.component';
 
 export default {
-  title: 'DigitalAgency/Molecules/Header',
+  title: 'DigitalAgency/Organisms/Header',
   decorators: [
     moduleMetadata({
       //👇 Imports both components to allow component composition with Storybook
