@@ -1,0 +1,46 @@
+.button {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.500211px;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 10px 40px;
+}
+
+.button--primary {
+  font-size: 20px;
+  border: 1px solid #5454D4;
+  background-color:  #5454D4;
+  display: flex;
+  align-items: center;
+}
+
+.button--secondary {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+}
+
+.button--big_play {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1011px) {
+  .button {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .button {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .button {
+    margin-bottom: 50px;
+  }
+}
