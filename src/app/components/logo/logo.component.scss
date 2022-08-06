@@ -1,0 +1,15 @@
+.logo__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo__text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 140%;
+  color: #ffffff;
+  position: absolute;
+  margin-left: 48px;
+}

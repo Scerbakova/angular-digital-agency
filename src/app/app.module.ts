@@ -6,13 +6,23 @@ import { AppComponent } from './app.component';
 import { ButtonComponent } from './components/button/button.component';
 import { LinkComponent } from './components/link/link.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
+import { LogoComponent } from './components/logo/logo.component';
+import { TitleComponent } from './components/title/title.component';
+import { TextComponent } from './components/text/text.component';
+import { HeaderComponent } from './components/header/header.component';
+import { PlatformSectionComponent } from './components/platform-section/platform-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonComponent,
     LinkComponent,
-    NavigationComponent
+    NavigationComponent,
+    LogoComponent,
+    TitleComponent,
+    TextComponent,
+    HeaderComponent,
+    PlatformSectionComponent
   ],
   imports: [
     BrowserModule,

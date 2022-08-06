@@ -1,6 +1,5 @@
-import { Story, Meta } from '@storybook/angular';
-import { componentWrapperDecorator } from '@storybook/angular';
-import { LinkComponent } from 'src/app/components/link/link.component';
+import { Story, Meta, componentWrapperDecorator } from '@storybook/angular';
+import { LinkComponent } from './link.component';
 
 export default {
   title: 'DigitalAgency/Atoms/Link',

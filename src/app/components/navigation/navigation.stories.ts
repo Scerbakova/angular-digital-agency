@@ -1,7 +1,7 @@
 // import { CommonModule } from '@angular/common';
 import { Story, Meta, moduleMetadata, componentWrapperDecorator } from '@storybook/angular';
 
-import { LinkComponent } from 'src/app/components/link/link.component';
+import { LinkComponent } from '../link/link.component';
 import { NavigationComponent } from './navigation.component';
 
 export default {
