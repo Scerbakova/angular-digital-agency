@@ -22,10 +22,10 @@
         <app-text
           *ngIf="screen === 'wideScreen'; else smallText"
           size="large"
-          [label]="textWhyChooseEnver"
+          [textLabel]="textWhyChooseEnver"
         ></app-text>
         <ng-template #smallText>
-          <app-text size="small" [label]="textWhyChooseEnver"></app-text>
+          <app-text size="small" [textLabel]="textWhyChooseEnver"></app-text>
         </ng-template>
       </div>
     </div>

@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-text',
-  template: `<p [ngClass]="textClasses">{{ label }}</p>`,
+  template: `<p [ngClass]="textClasses">{{ textLabel }}</p>`,
   styles: [
     '.text--large { font-size: 21px; line-height: 39px; }',
     '.text--small { font-size: 16px; line-height: 24px; }',
@@ -10,7 +10,7 @@ import { Component, Input } from '@angular/core';
 })
 export class TextComponent {
   @Input()
-  label = 'Text';
+  textLabel = 'textLabel';
 
   @Input()
   size: 'large' | 'small' = 'large';

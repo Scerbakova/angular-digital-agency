@@ -1,5 +1,8 @@
-// import { CommonModule } from '@angular/common';
-import { Story, Meta, moduleMetadata, componentWrapperDecorator } from '@storybook/angular';
+import { faPauseCircle, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
+import { Story, Meta, moduleMetadata } from '@storybook/angular';
+import { buttonBigPlay, buttonSmallPlay } from 'src/app/labels/buttonLabels';
+import { textWhyChooseEnver } from 'src/app/labels/textLabels';
+import { titleWhyChoseEnver } from 'src/app/labels/titleLabels';
 import { ButtonComponent } from '../button/button.component';
 import { TextComponent } from '../text/text.component';
 import { TitleComponent } from '../title/title.component';
@@ -10,14 +13,8 @@ export default {
   title: 'DigitalAgency/Organisms/WhyChooseEnverSection',
   decorators: [
     moduleMetadata({
-      //👇 Imports both components to allow component composition with Storybook
       declarations: [WhyChooseEnverSectionComponent, TextComponent, TitleComponent, ButtonComponent],
-      // imports: [CommonModule],
     }),
-    //👇 Wraps our stories with a decorator
-    componentWrapperDecorator(
-      (stories) => `<div style='backgroundColor: #19191b; height: 100vh; width: 95vw'>${stories}</div>`
-    ),
   ],
   component: WhyChooseEnverSectionComponent
 } as Meta;
@@ -28,5 +25,11 @@ const Template: Story<WhyChooseEnverSectionComponent> = (args: WhyChooseEnverSec
 
 export const Platform = Template.bind({});
 Platform.args = {
-
+  textWhyChooseEnver: textWhyChooseEnver.text,
+  buttonBigPlayImage: buttonBigPlay.image,
+  buttonSmallPlayImage: buttonSmallPlay.image,
+  titleWhyChoseEnver: titleWhyChoseEnver.title,
+  play: faPlayCircle,
+  pause: faPauseCircle,
+  isPlaying: false,
 };

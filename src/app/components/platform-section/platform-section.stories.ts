@@ -1,25 +1,22 @@
-// import { CommonModule } from '@angular/common';
-import { Story, Meta, moduleMetadata, componentWrapperDecorator } from '@storybook/angular';
+import { Story, Meta, moduleMetadata } from '@storybook/angular';
+
+import { buttonServices } from 'src/app/labels/buttonLabels';
+import { textPlatform } from 'src/app/labels/textLabels';
+import { titlePlatform } from 'src/app/labels/titleLabels';
+
 import { ButtonComponent } from '../button/button.component';
 import { TextComponent } from '../text/text.component';
 import { TitleComponent } from '../title/title.component';
-
 import { PlatformSectionComponent } from './platform-section.component';
 
 export default {
   title: 'DigitalAgency/Organisms/PlatformSection',
   decorators: [
     moduleMetadata({
-      //👇 Imports both components to allow component composition with Storybook
       declarations: [PlatformSectionComponent, TextComponent, TitleComponent, ButtonComponent],
-      // imports: [CommonModule],
     }),
-    //👇 Wraps our stories with a decorator
-    componentWrapperDecorator(
-      (stories) => `<div style='backgroundColor: #19191b; height: 100vh; width: 95vw'>${stories}</div>`
-    ),
   ],
-  component: PlatformSectionComponent
+  component: PlatformSectionComponent,
 } as Meta;
 
 const Template: Story<PlatformSectionComponent> = (args: PlatformSectionComponent) => ({
@@ -28,5 +25,8 @@ const Template: Story<PlatformSectionComponent> = (args: PlatformSectionComponen
 
 export const Platform = Template.bind({});
 Platform.args = {
-
+  titlePlatform: titlePlatform.title,
+  textPlatform:  textPlatform.text,
+  buttonServicesTitle:  buttonServices.title,
+  buttonServicesImage:  buttonServices.image,
 };

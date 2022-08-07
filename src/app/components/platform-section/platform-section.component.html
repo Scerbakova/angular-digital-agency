@@ -5,27 +5,27 @@
         <app-title
           *ngSwitchCase="'mediumScreen'"
           size="medium"
-          [label]="titlePlatformTitle"
+          [label]="titlePlatform"
         ></app-title>
         <app-title
           *ngSwitchCase="'smallScreen'"
           size="small"
-          [label]="titlePlatformTitle"
+          [label]="titlePlatform"
         ></app-title>
         <app-title
           *ngSwitchDefault
           size="large"
-          [label]="titlePlatformTitle"
+          [label]="titlePlatform"
         ></app-title>
       </div>
       <div class="text__wrapper">
         <app-text
           *ngIf="screen === 'wideScreen'; else smallText"
           size="large"
-          [label]="textPlatformText"
+          [textLabel]="textPlatform"
         ></app-text>
         <ng-template #smallText>
-          <app-text size="small" [label]="textPlatformText"></app-text>
+          <app-text size="small" [textLabel]="textPlatform"></app-text>
         </ng-template>
       </div>
       <app-button [round]="false" [label]="buttonServicesTitle" [primary]="true"

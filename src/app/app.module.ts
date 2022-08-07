@@ -17,6 +17,9 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ServicePageComponent } from './pages/service-page/service-page.component';
 import { OurProjectPageComponent } from './pages/our-project-page/our-project-page.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { ServicesSectionComponent } from './components/services-section/services-section.component';
+import { ServicesComponent } from './components/services-card/services-card.component';
+import { SubtitleComponent } from './components/subtitle/subtitle.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +37,9 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
     ServicePageComponent,
     OurProjectPageComponent,
     AboutPageComponent,
+    ServicesSectionComponent,
+    ServicesComponent,
+    SubtitleComponent,
   ],
   imports: [
     BrowserModule,

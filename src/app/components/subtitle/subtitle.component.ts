@@ -1,46 +1,42 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-title',
-  template: `<h2 [ngClass]="titleClasses">{{ label }}</h2>`,
+  selector: 'app-subtitle',
+  template: `<h3 [ngClass]="subtitleClasses">{{ subtitleLabel }}</h3>`,
   styles: [
     `
-      .title {
+      .subtitle {
         font-family: 'Graphik', sans-serif;
         font-style: normal;
         font-weight: 700;
         color: #ffffff;
       }
-      .title--large {
+      .subtitle--large {
         font-size: 80px;
         line-height: 84px;
       }
-      .title--medium {
-        font-size: 60px;
-        line-height: 70px;
-      }
-      .title--small {
+      .subtitle--small {
         font-size: 42px;
         line-height: 63px;
       }
     `,
   ],
 })
-export class TitleComponent {
+export class SubtitleComponent {
+
   @Input()
-  label = 'Title';
+  subtitleLabel = 'Subtitle';
 
   @Input()
   size: 'large' | 'medium' | 'small' = 'large';
 
-  public get titleClasses(): string[] {
+  public get subtitleClasses(): string[] {
     if (this.size === 'large') {
       ('title--large');
-    } else if (this.size === 'medium') {
-      ('title--medium');
     } else {
       ('title--small');
     }
     return ['title', `title--${this.size}`];
   }
+
 }

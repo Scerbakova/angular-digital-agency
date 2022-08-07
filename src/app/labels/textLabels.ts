@@ -5,3 +5,4 @@ export const textPlatform = {
 export const textWhyChooseEnver = {
   text: 'Watch this one minute video so you understand why you should use our services!'
 }
+

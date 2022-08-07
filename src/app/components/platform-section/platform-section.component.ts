@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import { buttonServices } from 'src/app/labels/buttonLabels';
 import { textPlatform } from 'src/app/labels/textLabels';
 import { titlePlatform } from 'src/app/labels/titleLabels';
@@ -9,11 +9,10 @@ import { titlePlatform } from 'src/app/labels/titleLabels';
   styleUrls: ['./platform-section.component.scss'],
 })
 export class PlatformSectionComponent {
-  titlePlatformTitle = titlePlatform.title;
-  textPlatformText = textPlatform.text;
+  titlePlatform = titlePlatform.title;
+  textPlatform = textPlatform.text;
   buttonServicesTitle = buttonServices.title;
   buttonServicesImage = buttonServices.image;
-  buttonColor = '#5454D4';
 
   screen: 'wideScreen' | 'mediumScreen' | 'smallScreen' = 'wideScreen';
 
