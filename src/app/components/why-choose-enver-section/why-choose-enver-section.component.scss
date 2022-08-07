@@ -23,24 +23,14 @@
 }
 
 .play__button {
-  width: 124px;
-  height: 124px;
   position: absolute;
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
-  background-color: rgb(84, 84, 212);
-  border: none;
-  border-radius: 50%;
   z-index: 1;
-}
-
-.play__button:hover {
-  background-color: rgba(84, 84, 212, 0.596);
-}
-
-.play {
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .controls {

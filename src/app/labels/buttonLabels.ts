@@ -4,6 +4,9 @@ export const buttonServices = {
 }
 
 export const buttonBigPlay = {
-  title: '',
-  image: '../../../assets/images/button-play.png'
+  image: '../../../assets/images/button-play.png',
+}
+
+export const buttonSmallPlay = {
+  image: '../../../assets/images/button-play-small.png',
 }

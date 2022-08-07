@@ -9,9 +9,11 @@ import { titlePlatform } from 'src/app/labels/titleLabels';
   styleUrls: ['./platform-section.component.scss'],
 })
 export class PlatformSectionComponent {
-  titlePlatform = titlePlatform;
-  textPlatform = textPlatform;
-  buttonServices = buttonServices;
+  titlePlatformTitle = titlePlatform.title;
+  textPlatformText = textPlatform.text;
+  buttonServicesTitle = buttonServices.title;
+  buttonServicesImage = buttonServices.image;
+  buttonColor = '#5454D4';
 
   screen: 'wideScreen' | 'mediumScreen' | 'smallScreen' = 'wideScreen';
 

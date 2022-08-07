@@ -21,26 +21,37 @@
   background-color: transparent;
 }
 
-.button--big_play {
-  width: 50px;
-  height: 50px;
+.button--round {
+  border: 1px solid #5454D4;
+  background-color:  #5454D4;
   border-radius: 50%;
+  padding: 0px;
+}
+
+.button--large {
+  width: 124px;
+  height: 124px;
+}
+
+.button--small {
+  width: 40px;
+  height: 40px;
 }
 
 @media screen and (max-width: 1011px) {
-  .button {
+  .button--primary {
     padding: 10px 20px;
   }
 }
 
 @media screen and (max-width: 775px) {
-  .button {
+  .button--primary {
     padding: 10px 20px;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .button {
+  .button--primary {
     margin-bottom: 50px;
   }
 }

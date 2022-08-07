@@ -2,11 +2,13 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-text',
-  templateUrl: './text.component.html',
-  styleUrls: ['./text.component.scss']
+  template: `<p [ngClass]="textClasses">{{ label }}</p>`,
+  styles: [
+    '.text--large { font-size: 21px; line-height: 39px; }',
+    '.text--small { font-size: 16px; line-height: 24px; }',
+  ],
 })
 export class TextComponent {
-
   @Input()
   label = 'Text';
 
@@ -21,5 +23,4 @@ export class TextComponent {
     }
     return ['text', `text--${this.size}`];
   }
-
 }

@@ -11,7 +11,7 @@ import { TitleComponent } from './components/title/title.component';
 import { TextComponent } from './components/text/text.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PlatformSectionComponent } from './components/platform-section/platform-section.component';
-import { WhyChooseEnvorSectionComponent } from './components/why-choose-envor-section/why-choose-envor-section.component';
+import { WhyChooseEnverSectionComponent } from './components/why-choose-enver-section/why-choose-enver-section.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ServicePageComponent } from './pages/service-page/service-page.component';
@@ -29,7 +29,7 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
     TextComponent,
     HeaderComponent,
     PlatformSectionComponent,
-    WhyChooseEnvorSectionComponent,
+    WhyChooseEnverSectionComponent,
     HomePageComponent,
     ServicePageComponent,
     OurProjectPageComponent,

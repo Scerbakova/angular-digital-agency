@@ -1,23 +1,22 @@
 import { Component,  HostListener } from '@angular/core';
-import { faPauseCircle, faPlay, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
-import { buttonBigPlay } from 'src/app/labels/buttonLabels';
+import { faPauseCircle, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
+import { buttonBigPlay, buttonSmallPlay } from 'src/app/labels/buttonLabels';
 import { textWhyChooseEnver } from 'src/app/labels/textLabels';
 import { titleWhyChoseEnver } from 'src/app/labels/titleLabels';
 
 
 @Component({
-  selector: 'app-why-choose-envor-section',
-  templateUrl: './why-choose-envor-section.component.html',
-  styleUrls: ['./why-choose-envor-section.component.scss'],
+  selector: 'app-why-choose-enver-section',
+  templateUrl: './why-choose-enver-section.component.html',
+  styleUrls: ['./why-choose-enver-section.component.scss'],
 })
-export class WhyChooseEnvorSectionComponent {
-  titleWhyChoseEnver = titleWhyChoseEnver;
-  textWhyChooseEnver = textWhyChooseEnver;
-  // buttonServices = buttonServices;
-  buttonBigPlay = buttonBigPlay;
+export class WhyChooseEnverSectionComponent {
+  titleWhyChoseEnver = titleWhyChoseEnver.title;
+  textWhyChooseEnver = textWhyChooseEnver.text;
+  buttonBigPlayImage = buttonBigPlay.image;
+  buttonSmallPlayImage = buttonSmallPlay.image;
   play = faPlayCircle;
   pause = faPauseCircle
-  solidPlay = faPlay;
   isPlaying = false;
 
   screen: 'wideScreen' | 'mediumScreen' | 'smallScreen' = 'wideScreen';

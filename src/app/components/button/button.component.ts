@@ -1,26 +1,45 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-button',
-  templateUrl: './button.component.html',
+  template: ` <button
+    type="button"
+    (click)="onClick.emit($event)"
+    [ngClass]="classes"
+    [ngStyle]="{ 'backgroundColor': backgroundColor }"
+  >
+    {{ label }}
+    <ng-content></ng-content>
+  </button>`,
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent {
 
   @Input()
+  backgroundColor = 'color';
+
+  @Input()
+  label!: string;
+
+  @Input()
+  round = false;
+
+  @Input()
   primary = false;
 
   @Input()
-  label = 'Button';
+  size: 'large' | 'small' | '' = '';
 
-  // @Input()
-  // type = 'round';
+  @Output()
+  onClick = new EventEmitter<Event>();
 
   public get classes(): string[] {
 
-    const mode = this.primary ? 'button--primary' : 'button--secondary';
+    const shape = this.round ? 'button--round' : 'button--rectangle';
 
-    return ['button', 'button--', mode];
+    const mode = this.primary? 'button--primary' : 'button--secondary';
+
+    return ['button', `button--${this.size}`, shape, mode];
   }
 
 }

@@ -9,6 +9,9 @@ export default {
     ),
   ],
   component: ButtonComponent,
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
 } as Meta;
 
 const Template: Story<ButtonComponent> = (args: ButtonComponent) => ({
@@ -19,10 +22,25 @@ const Template: Story<ButtonComponent> = (args: ButtonComponent) => ({
 export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
+  round: false,
   label: 'Button',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   label: 'Button',
+};
+
+export const BigRound = Template.bind({});
+BigRound.args = {
+  round: true,
+  size: 'large',
+  label: 'play'
+};
+
+export const SmallRound = Template.bind({});
+SmallRound.args = {
+  round: true,
+  size: 'small',
+  label: 'play'
 };

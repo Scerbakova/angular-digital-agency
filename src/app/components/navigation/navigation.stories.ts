@@ -18,9 +18,6 @@ export default {
     ),
   ],
   component: NavigationComponent,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
 } as Meta;
 
 const Template: Story<NavigationComponent> = (args: NavigationComponent) => ({

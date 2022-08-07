@@ -17,6 +17,6 @@ const Template: Story<LogoComponent> = (args: LogoComponent) => ({
 
 export const Logo = Template.bind({});
 Logo.args = {
-  label: 'Envor',
+  label: 'Enver',
   image: '../../../assets/images/Logo Icon 1.svg',
 };

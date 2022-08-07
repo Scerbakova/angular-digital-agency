@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-about-page',
-  templateUrl: './about-page.component.html',
+  template: `<app-header></app-header>`,
 })
 export class AboutPageComponent implements OnInit {
 

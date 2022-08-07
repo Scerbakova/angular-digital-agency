@@ -8,6 +8,61 @@
     "directives": [],
     "components": [
         {
+            "name": "AboutPageComponent",
+            "id": "component-AboutPageComponent-8640138015c3054ef0a488fb498aee3c16b1a5e05d8ec9904a83afb00080c00a1255fec57838c47246638b95cf3c2d705446409b1ddfdde27e6bf1cb272c3d8f",
+            "file": "src/app/pages/about-page/about-page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-about-page",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./about-page.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 11,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-about-page',\n  templateUrl: './about-page.component.html',\n})\nexport class AboutPageComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 7
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<app-header></app-header>\n"
+        },
+        {
             "name": "AppComponent",
             "id": "component-AppComponent-ba21efa5abccc708fff166f14f2b620c3a597f3b1ebf1d10ca4f154deacf94f72c3293108be795040ea8e1680eae643e2d159ed3fc3521025fb7441205dbc419",
             "file": "src/app/app.component.ts",
@@ -51,12 +106,12 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".container {\n  overflow: hidden;\n  position: relative;\n}\n\n.content__wrapper {\n  margin: 40px 120px;\n}\n\n.spot {\n  position: absolute;\n  top: 0%;\n  z-index: -1;\n}\n\n.light__spot--brown {\n  right: 0%;\n}\n\n@media screen and (max-width: 1010px) {\n  .content__wrapper {\n    margin: 40px;\n  }\n}",
+                    "data": ".container {\n  overflow: hidden;\n  position: relative;\n}",
                     "styleUrl": "./app.component.scss"
                 }
             ],
             "stylesData": "",
-            "templateData": "<div class=\"container\">\n  <div class=\"content__wrapper\">\n    <app-header class=\"header\"></app-header>\n    <app-platform-section></app-platform-section>\n    <app-why-choose-envor-section></app-why-choose-envor-section>\n  </div>\n  <div class=\"light__spots\">\n    <img class=\"spot light__spot\" src=\"../assets/images/spot.png\" />\n    <img class=\"spot light__spot--brown\" src=\"../assets/images/spot-brown.png\" />\n  </div>\n</div>\n"
+            "templateData": "<div class=\"container\">\n  <router-outlet></router-outlet>\n</div>\n"
         },
         {
             "name": "ButtonComponent",
@@ -256,8 +311,70 @@
             "templateData": "<header *ngIf=\"wideScreen; else smallScreen\" [ngClass]=\"headerClass\">\n  <app-logo></app-logo>\n  <app-navigation></app-navigation>\n  <app-button *ngIf=\"wideScreen\" label=\"Contact us\"></app-button>\n</header>\n<ng-template #smallScreen>\n  <header [ngClass]=\"headerClass\">\n    <app-logo></app-logo>\n    <app-navigation [burger]=\"true\" *ngIf=\"showMenu === true\"></app-navigation>\n    <div (click)=\"onShowMenu()\">\n      <img *ngIf=\"!showMenu; else showClose\" src=\"../../../assets/images/burger.svg\" alt=\"menu\">\n      <ng-template #showClose>&#10006;</ng-template>\n    </div>\n  </header>\n</ng-template>\n\n"
         },
         {
+            "name": "HomePageComponent",
+            "id": "component-HomePageComponent-7ad1bb49de354bccfcfe911269fba1435b30b34ea953035c1b069febaf8e0d5ae5b3723053a515a5e345160cadb3ed97e88f01578bd2d04f153dfac09cfa65a3",
+            "file": "src/app/pages/home-page/home-page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-home-page",
+            "styleUrls": [
+                "./home-page.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./home-page.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-home-page',\n  templateUrl: './home-page.component.html',\n  styleUrls: ['./home-page.component.scss']\n})\nexport class HomePageComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".content__wrapper {\n  margin: 40px 120px;\n}\n\n.spot {\n  position: absolute;\n  top: 0%;\n  z-index: -1;\n}\n\n.light__spot--brown {\n  right: 0%;\n}\n\n@media screen and (max-width: 1010px) {\n  .content__wrapper {\n    margin: 40px;\n  }\n}",
+                    "styleUrl": "./home-page.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"content__wrapper\">\n  <app-header></app-header>\n  <app-platform-section></app-platform-section>\n  <app-why-choose-envor-section></app-why-choose-envor-section>\n</div>\n<div class=\"light__spots\">\n  <img class=\"spot light__spot\" src=\"../assets/images/spot.png\" />\n  <img class=\"spot light__spot--brown\" src=\"../assets/images/spot-brown.png\" />\n</div>"
+        },
+        {
             "name": "LinkComponent",
-            "id": "component-LinkComponent-31f856c4c10246d0fedc677f6ef0ae6b7a18695057455f6b78075e9b45eec23bd41aa422786f364b9463e944d6f3987427a2122a4380fa39381bedd65e63ea5c",
+            "id": "component-LinkComponent-de76db253a2692a92d9b8fd90372c492dde1f7ad21b2121f8716f054ee84dae29009d5614ee389909f0e39df125e35e22a08d24f039e72e14e1ce463a77563d1",
             "file": "src/app/components/link/link.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -282,6 +399,15 @@
                     "line": 11,
                     "type": "string",
                     "decorators": []
+                },
+                {
+                    "name": "link",
+                    "defaultValue": "\"\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "string",
+                    "decorators": []
                 }
             ],
             "outputsClass": [],
@@ -294,16 +420,16 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-link',\n  templateUrl: './link.component.html',\n  styleUrls: ['./link.component.scss']\n})\nexport class LinkComponent {\n\n  @Input()\n  label = 'Home';\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-link',\n  templateUrl: './link.component.html',\n  styleUrls: ['./link.component.scss']\n})\nexport class LinkComponent {\n\n  @Input()\n  label = 'Home';\n\n  @Input()\n  link = \"\";\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".navbar__link {\n  font-size: 18px;\n  line-height: 25px;\n  color: rgba(255, 255, 255, 0.7);\n}\n// .navbar__link-active {\n//   color: #5454D4;\n// }\n.navbar__link:active {\n  color: #5454D4;\n}",
+                    "data": ".navbar__link {\n  font-size: 18px;\n  line-height: 25px;\n  color: rgba(255, 255, 255, 0.7);\n}\n\n.navbar__link-active {\n  color: #5454D4;\n}",
                     "styleUrl": "./link.component.scss"
                 }
             ],
             "stylesData": "",
-            "templateData": "<li><a class=\"navbar__link\">{{ label }}</a></li>\n"
+            "templateData": "<li><a [routerLink]=\"link\" routerLinkActive=\"navbar__link-active\" class=\"navbar__link\">{{ label }}</a></li>"
         },
         {
             "name": "LogoComponent",
@@ -422,7 +548,62 @@
                     }
                 }
             },
-            "templateData": "<ul [ngClass]=\"ulClass\">\n  <app-link label=\"Home\"></app-link>\n  <app-link label=\"Services\"></app-link>\n  <app-link label=\"Our Project\"></app-link>\n  <app-link label=\"About us\"></app-link>\n</ul>"
+            "templateData": "<ul [ngClass]=\"ulClass\">\n  <app-link link=\"/home\" label=\"Home\"></app-link>\n  <app-link link=\"/services\" label=\"Services\"></app-link>\n  <app-link link=\"/project\" label=\"Our Project\"></app-link>\n  <app-link link=\"/about\" label=\"About us\"></app-link>\n</ul>"
+        },
+        {
+            "name": "OurProjectPageComponent",
+            "id": "component-OurProjectPageComponent-df10e2a6c52b6b6ad36d8c39b3317679a0ef4feddd8708d3299aa7ec68b8c571d0ece9141239ef47bc5dd945b2e2270e978ffb315041b0dc966d2357e1c3cacd",
+            "file": "src/app/pages/our-project-page/our-project-page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-our-project-page",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./our-project-page.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 11,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-our-project-page',\n  templateUrl: './our-project-page.component.html',\n})\nexport class OurProjectPageComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 7
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<app-header></app-header>\n"
         },
         {
             "name": "PlatformSectionComponent",
@@ -539,6 +720,61 @@
             ],
             "stylesData": "",
             "templateData": "<section>\n  <div class=\"platform__wrapper\">\n    <div class=\"platform__text\">\n      <div class=\"title__wrapper\" [ngSwitch]=\"screen\">\n        <app-title\n          *ngSwitchCase=\"'mediumScreen'\"\n          size=\"medium\"\n          [label]=\"titlePlatform\"\n        ></app-title>\n        <app-title\n          *ngSwitchCase=\"'smallScreen'\"\n          size=\"small\"\n          [label]=\"titlePlatform\"\n        ></app-title>\n        <app-title\n          *ngSwitchDefault\n          size=\"large\"\n          [label]=\"titlePlatform\"\n        ></app-title>\n      </div>\n      <div class=\"text__wrapper\">\n        <app-text\n          *ngIf=\"screen === 'wideScreen'; else smallText\"\n          size=\"large\"\n          [label]=\"textPlatform\"\n        ></app-text>\n        <ng-template #smallText>\n          <app-text size=\"small\" [label]=\"textPlatform\"></app-text>\n        </ng-template>\n      </div>\n      <app-button [primary]=\"true\" [label]=\"buttonServices.title\"\n        ><img class=\"button__arrow\" [src]=\"buttonServices.image\"\n      /></app-button>\n    </div>\n    <div class=\"platform__picture\">\n      <div class=\"picture__wrapper\">\n        <img\n          class=\"human__picture\"\n          src=\"../../../assets/images/human.png\"\n          alt=\"human\"\n        />\n        <div class=\"picture__rectangle\"></div>\n        <img\n          class=\"picture add__picture\"\n          src=\"../../../assets/images/add.png\"\n          alt=\"add\"\n        />\n        <img\n          class=\"picture circles__picture\"\n          src=\"../../../assets/images/circles.png\"\n          alt=\"circles\"\n        />\n        <img\n          class=\"picture play__picture\"\n          src=\"../../../assets/images/play.png\"\n          alt=\"play\"\n        />\n        <img\n          class=\"picture zigzag__picture\"\n          src=\"../../../assets/images/zigzag.png\"\n          alt=\"zigzag\"\n        />\n      </div>\n    </div>\n  </div>\n</section>\n\n"
+        },
+        {
+            "name": "ServicePageComponent",
+            "id": "component-ServicePageComponent-82218ee3cb04dddd694414cf15e918ebabde445c574b3bffb696fd9de998323f5f4536e733591348d3a9ed16c7454eef1102e3eabcf944f42f4899cb6007a8b2",
+            "file": "src/app/pages/service-page/service-page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-service-page",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./service-page.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 11,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-service-page',\n  templateUrl: './service-page.component.html',\n})\nexport class ServicePageComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 7
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<app-header></app-header>\n"
         },
         {
             "name": "TextComponent",
@@ -850,13 +1086,13 @@
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-aff4100795fd16bedc689861bd8ec3002c3d5850d187b201de02223995005d400742b24330349f17b468d4b84c3b5aa324f7a2dfbf0779ffb98972f7a1e03a63",
+            "id": "module-AppModule-1a984ce0f2208ea06acda5f1bda9b1db34d55a06fb0a4672082df508694995459d084e0be32d220b8557069113dd79651f5854ce86b86b032730169913cc4375",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { ButtonComponent } from './components/button/button.component';\nimport { LinkComponent } from './components/link/link.component';\nimport { NavigationComponent } from './components/navigation/navigation.component';\nimport { LogoComponent } from './components/logo/logo.component';\nimport { TitleComponent } from './components/title/title.component';\nimport { TextComponent } from './components/text/text.component';\nimport { HeaderComponent } from './components/header/header.component';\nimport { PlatformSectionComponent } from './components/platform-section/platform-section.component';\nimport { WhyChooseEnvorSectionComponent } from './components/why-choose-envor-section/why-choose-envor-section.component';\nimport { FontAwesomeModule } from '@fortawesome/angular-fontawesome';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    ButtonComponent,\n    LinkComponent,\n    NavigationComponent,\n    LogoComponent,\n    TitleComponent,\n    TextComponent,\n    HeaderComponent,\n    PlatformSectionComponent,\n    WhyChooseEnvorSectionComponent\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    FontAwesomeModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { ButtonComponent } from './components/button/button.component';\nimport { LinkComponent } from './components/link/link.component';\nimport { NavigationComponent } from './components/navigation/navigation.component';\nimport { LogoComponent } from './components/logo/logo.component';\nimport { TitleComponent } from './components/title/title.component';\nimport { TextComponent } from './components/text/text.component';\nimport { HeaderComponent } from './components/header/header.component';\nimport { PlatformSectionComponent } from './components/platform-section/platform-section.component';\nimport { WhyChooseEnvorSectionComponent } from './components/why-choose-envor-section/why-choose-envor-section.component';\nimport { FontAwesomeModule } from '@fortawesome/angular-fontawesome';\nimport { HomePageComponent } from './pages/home-page/home-page.component';\nimport { ServicePageComponent } from './pages/service-page/service-page.component';\nimport { OurProjectPageComponent } from './pages/our-project-page/our-project-page.component';\nimport { AboutPageComponent } from './pages/about-page/about-page.component';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    ButtonComponent,\n    LinkComponent,\n    NavigationComponent,\n    LogoComponent,\n    TitleComponent,\n    TextComponent,\n    HeaderComponent,\n    PlatformSectionComponent,\n    WhyChooseEnvorSectionComponent,\n    HomePageComponent,\n    ServicePageComponent,\n    OurProjectPageComponent,\n    AboutPageComponent,\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    FontAwesomeModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -866,6 +1102,9 @@
                     "type": "declarations",
                     "elements": [
                         {
+                            "name": "AboutPageComponent"
+                        },
+                        {
                             "name": "AppComponent"
                         },
                         {
@@ -873,6 +1112,9 @@
                         },
                         {
                             "name": "HeaderComponent"
+                        },
+                        {
+                            "name": "HomePageComponent"
                         },
                         {
                             "name": "LinkComponent"
@@ -884,7 +1126,13 @@
                             "name": "NavigationComponent"
                         },
                         {
+                            "name": "OurProjectPageComponent"
+                        },
+                        {
                             "name": "PlatformSectionComponent"
+                        },
+                        {
+                            "name": "ServicePageComponent"
                         },
                         {
                             "name": "TextComponent"
@@ -925,13 +1173,13 @@
         },
         {
             "name": "AppRoutingModule",
-            "id": "module-AppRoutingModule-78922b3ae99d2c5249b333980bd5afde1b120b2cc6fedfd41b8b2cc90f279797cb4b22e183bf7e1d1dfab8c6100e77e7812c110234d81f866f544f28a3e18b15",
+            "id": "module-AppRoutingModule-7eed8fe7ab5ff956ed9d5b4361ada18edbdb0b1af817254646360657534dd6a8af810fc5011d673c63adaf442b47b7b0f4476c83a1ec2324d65b395abe80796a",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app-routing.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\n\nconst routes: Routes = [];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { AboutPageComponent } from './pages/about-page/about-page.component';\nimport { HomePageComponent } from './pages/home-page/home-page.component';\nimport { OurProjectPageComponent } from './pages/our-project-page/our-project-page.component';\nimport { ServicePageComponent } from './pages/service-page/service-page.component';\n\nconst routes: Routes = [\n  {\n    path: '',\n    redirectTo: 'home',\n    pathMatch: 'full',\n  },\n  {\n    path: 'home',\n    component: HomePageComponent\n  },\n  {\n    path: 'services',\n    component: ServicePageComponent\n  },\n  {\n    path: 'project',\n    component: OurProjectPageComponent\n  },\n  {\n    path: 'about',\n    component: AboutPageComponent\n  },\n  {\n    path: 'home',\n    component: HomePageComponent\n  },\n  {\n    path: '**',\n    redirectTo: 'home',\n    pathMatch: 'full',\n  }\n];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -1026,7 +1274,7 @@
                 "name": "Large",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/text/text.stories.ts",
+                "file": "src/app/components/title/title.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1036,7 +1284,7 @@
                 "name": "Large",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/title/title.stories.ts",
+                "file": "src/app/components/text/text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1083,6 +1331,16 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "Platform",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/platform-section/platform-section.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1115,7 +1373,7 @@
                 "name": "Small",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/text/text.stories.ts",
+                "file": "src/app/components/title/title.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1125,21 +1383,11 @@
                 "name": "Small",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/title/title.stories.ts",
+                "file": "src/app/components/text/text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/button/button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ButtonComponent>",
-                "defaultValue": "(args: ButtonComponent) => ({\n  component: ButtonComponent,\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -1155,21 +1403,31 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/logo/logo.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<LogoComponent>",
-                "defaultValue": "(args: LogoComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/components/link/link.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<LinkComponent>",
                 "defaultValue": "(args: LinkComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\n  component: ButtonComponent,\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/logo/logo.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<LogoComponent>",
+                "defaultValue": "(args: LogoComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -1185,11 +1443,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/text/text.stories.ts",
+                "file": "src/app/components/platform-section/platform-section.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<TextComponent>",
-                "defaultValue": "(args: TextComponent) => ({\n  props: args,\n})"
+                "type": "Story<PlatformSectionComponent>",
+                "defaultValue": "(args: PlatformSectionComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -1200,6 +1458,16 @@
                 "deprecationMessage": "",
                 "type": "Story<TitleComponent>",
                 "defaultValue": "(args: TitleComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/text/text.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TextComponent>",
+                "defaultValue": "(args: TextComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "textPlatform",
@@ -1335,38 +1603,6 @@
                     "defaultValue": "(args: HeaderComponent) => ({\n  props: args,\n})"
                 }
             ],
-            "src/app/components/text/text.stories.ts": [
-                {
-                    "name": "Large",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/text/text.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Small",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/text/text.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/text/text.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<TextComponent>",
-                    "defaultValue": "(args: TextComponent) => ({\n  props: args,\n})"
-                }
-            ],
             "src/app/components/title/title.stories.ts": [
                 {
                     "name": "Large",
@@ -1407,6 +1643,38 @@
                     "deprecationMessage": "",
                     "type": "Story<TitleComponent>",
                     "defaultValue": "(args: TitleComponent) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/app/components/text/text.stories.ts": [
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/text/text.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/text/text.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/text/text.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<TextComponent>",
+                    "defaultValue": "(args: TextComponent) => ({\n  props: args,\n})"
                 }
             ],
             "src/app/components/logo/logo.stories.ts": [
@@ -1473,6 +1741,28 @@
                     "deprecationMessage": "",
                     "type": "Story<LinkComponent>",
                     "defaultValue": "(args: LinkComponent) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/app/components/platform-section/platform-section.stories.ts": [
+                {
+                    "name": "Platform",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/platform-section/platform-section.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/platform-section/platform-section.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<PlatformSectionComponent>",
+                    "defaultValue": "(args: PlatformSectionComponent) => ({\n  props: args,\n})"
                 }
             ],
             "src/app/components/button/button.stories.ts": [
@@ -1565,7 +1855,38 @@
                 "name": "routes",
                 "filename": "src/app/app-routing.module.ts",
                 "module": "AppRoutingModule",
-                "children": [],
+                "children": [
+                    {
+                        "path": "",
+                        "redirectTo": "home",
+                        "pathMatch": "full"
+                    },
+                    {
+                        "path": "home",
+                        "component": "HomePageComponent"
+                    },
+                    {
+                        "path": "services",
+                        "component": "ServicePageComponent"
+                    },
+                    {
+                        "path": "project",
+                        "component": "OurProjectPageComponent"
+                    },
+                    {
+                        "path": "about",
+                        "component": "AboutPageComponent"
+                    },
+                    {
+                        "path": "home",
+                        "component": "HomePageComponent"
+                    },
+                    {
+                        "path": "**",
+                        "redirectTo": "home",
+                        "pathMatch": "full"
+                    }
+                ],
                 "kind": "module"
             }
         ]
@@ -1657,7 +1978,7 @@
                 "linktype": "component",
                 "name": "LinkComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/2",
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {
@@ -1745,6 +2066,26 @@
                 "name": "PlatformSectionComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/platform-section/platform-section.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Platform",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/platform-section/platform-section.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -1902,6 +2243,42 @@
                 "name": "titleWhyChoseEnver",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/about-page/about-page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AboutPageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/home-page/home-page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HomePageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/our-project-page/our-project-page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "OurProjectPageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/service-page/service-page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ServicePageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {
