@@ -20,6 +20,7 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ServicesSectionComponent } from './components/services-section/services-section.component';
 import { ServicesComponent } from './components/services-card/services-card.component';
 import { SubtitleComponent } from './components/subtitle/subtitle.component';
+import { ServiceImageComponent } from './components/service-image/service-image.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { SubtitleComponent } from './components/subtitle/subtitle.component';
     ServicesSectionComponent,
     ServicesComponent,
     SubtitleComponent,
+    ServiceImageComponent,
   ],
   imports: [
     BrowserModule,

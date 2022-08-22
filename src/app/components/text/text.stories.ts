@@ -18,11 +18,17 @@ const Template: Story<TextComponent> = (args: TextComponent) => ({
 export const Large = Template.bind({});
 Large.args = {
   size: 'large',
-  label: 'Text',
+  textLabel: 'Text',
 };
+
+export const Medium = Template.bind({});
+Medium.args = {
+  size: 'medium',
+  textLabel: 'Text',
+}
 
 export const Small = Template.bind({});
 Small.args = {
   size: 'small',
-  label: 'Text',
+  textLabel: 'Text',
 };

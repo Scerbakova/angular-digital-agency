@@ -6,37 +6,35 @@ import { Component, Input } from '@angular/core';
   styles: [
     `
       .subtitle {
-        font-family: 'Graphik', sans-serif;
+        font-family: 'Nunito Sans', sans-serif;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 600;
         color: #ffffff;
       }
       .subtitle--large {
-        font-size: 80px;
-        line-height: 84px;
+        font-size: 28px;
+        line-height: 38px;
       }
       .subtitle--small {
-        font-size: 42px;
-        line-height: 63px;
+        font-size: 24px;
+        line-height: 33px;
       }
     `,
   ],
 })
 export class SubtitleComponent {
-
   @Input()
   subtitleLabel = 'Subtitle';
 
   @Input()
-  size: 'large' | 'medium' | 'small' = 'large';
+  size: 'large' | 'small' = 'large';
 
   public get subtitleClasses(): string[] {
     if (this.size === 'large') {
-      ('title--large');
+      ('subtitle--large');
     } else {
-      ('title--small');
+      ('subtitle--small');
     }
-    return ['title', `title--${this.size}`];
+    return ['subtitle', `subtitle--${this.size}`];
   }
-
 }

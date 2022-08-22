@@ -1,6 +1,6 @@
 <section>
-  <div class="best--choice__wrapper">
-    <div class="best--choice__text">
+  <div class="services__wrapper">
+    <div class="services__text">
       <div class="title__wrapper" [ngSwitch]="screen">
         <app-title
           *ngSwitchCase="'mediumScreen'"
@@ -19,6 +19,13 @@
         ></app-title>
       </div>
     </div>
-    <app-services-card *ngFor="let service of services" subtitleLabel={{service.title}} textLabel={{service.text}} serviceImage={{service.image}}></app-services-card>
+    <div class="services-card__wrapper">
+      <app-services-card
+        *ngFor="let service of services"
+        subtitleLabel="{{ service.title }}"
+        textLabel="{{ service.text }}"
+        serviceImage="{{ service.image }}"
+      ></app-services-card>
+    </div>
   </div>
 </section>
