@@ -18,7 +18,52 @@
       ></app-title>
     </div>
     <div class="portfolio-crousel__wrapper">
-      <div class="carousel">KARUSELJ</div>
+      <div [ngStyle]="{left: offset }" class="carousel" (click)="carouselMoves()" >
+        <div class="carousel__item carousel__item-upper">
+          <div class="carousel__image-wrapper">
+            <img
+              src="../../../assets/images/carousel_image_1.png"
+              alt="first portfolio item"
+            />
+          </div>
+        </div>
+
+        <div class="carousel__item carousel__item-middle">
+          <div class="carousel__image-wrapper">
+            <img
+              src="../../../assets/images/carousel_image_2.png"
+              alt="first portfolio item"
+            />
+          </div>
+        </div>
+
+        <div class="carousel__item carousel__item-lower">
+          <div class="carousel__image-wrapper">
+            <img
+              src="../../../assets/images/carousel_image_3.png"
+              alt="first portfolio item"
+            />
+          </div>
+        </div>
+
+            <div class="carousel__item carousel__item-upper">
+              <div class="carousel__image-wrapper">
+                <img
+                  src="../../../assets/images/carousel_image_1.png"
+                  alt="first portfolio item"
+                />
+              </div>
+            </div>
+
+            <div class="carousel__item carousel__item-middle">
+              <div class="carousel__image-wrapper">
+                <img
+                  src="../../../assets/images/carousel_image_2.png"
+                  alt="first portfolio item"
+                />
+              </div>
+            </div>
+      </div>
     </div>
   </div>
 </section>

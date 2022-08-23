@@ -22,6 +22,7 @@ import { ServicesComponent } from './components/pages/home-page/sections/service
 import { SubtitleComponent } from './components/reusable/subtitle/subtitle.component';
 import { ServiceImageComponent } from './components/pages/home-page/sections/services-section/service-image/service-image.component';
 import { PortfolioSectionComponent } from './components/pages/home-page/sections/portfolio-section/portfolio-section.component';
+import { ImageCardComponent } from './components/pages/home-page/sections/portfolio-section/image-card/image-card.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { PortfolioSectionComponent } from './components/pages/home-page/sections
     SubtitleComponent,
     ServiceImageComponent,
     PortfolioSectionComponent,
+    ImageCardComponent,
   ],
   imports: [
     BrowserModule,

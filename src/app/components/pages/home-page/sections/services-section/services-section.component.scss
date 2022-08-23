@@ -16,6 +16,7 @@
   justify-content: space-between;
   row-gap: 24px;
   column-gap: 24px;
+  position: relative;
 }
 
 .picture {
@@ -34,8 +35,8 @@
 }
 
 .add__picture--lower {
-  bottom: 0px;
-  left: 50px;
+  bottom: -40px;
+  left: 0px;
   transform: rotate(25deg);
 }
 
@@ -86,8 +87,8 @@
     text-align: start;
   }
   .add__picture--lower {
-    bottom: -40px;
-    left: 20px;
+    bottom: -90px;
+    left: 0px;
     max-width: 30px;
     transform: rotate(0deg);
   }
