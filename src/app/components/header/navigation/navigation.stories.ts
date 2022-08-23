@@ -5,7 +5,7 @@ import { LinkComponent } from '../link/link.component';
 import { NavigationComponent } from './navigation.component';
 
 export default {
-  title: 'DigitalAgency/Molecules/Navigation',
+  title: 'DigitalAgency/Organisms/Molecules/Navigation',
   decorators: [
     moduleMetadata({
       //👇 Imports both components to allow component composition with Storybook

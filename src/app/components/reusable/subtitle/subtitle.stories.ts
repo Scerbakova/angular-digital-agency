@@ -1,34 +1,28 @@
 import { Story, Meta, componentWrapperDecorator } from '@storybook/angular';
-import { TextComponent } from './text.component';
+import { SubtitleComponent } from './subtitle.component';
 
 export default {
-  title: 'DigitalAgency/Atoms/Text',
+  title: 'DigitalAgency/Organisms/Molecules/Atoms/Subtitle',
   decorators: [
     componentWrapperDecorator(
       (stories) => `<div style='backgroundColor: #19191b; height: 100vh; width: 100vw; display: flex; justifyContent: center; alignItems: center'>${stories}</div>`
     ),
   ],
-  component: TextComponent,
+  component: SubtitleComponent,
 } as Meta;
 
-const Template: Story<TextComponent> = (args: TextComponent) => ({
+const Template: Story<SubtitleComponent> = (args: SubtitleComponent) => ({
   props: args,
 });
 
 export const Large = Template.bind({});
 Large.args = {
   size: 'large',
-  textLabel: 'Text',
+  subtitleLabel: 'Subtitle',
 };
-
-export const Medium = Template.bind({});
-Medium.args = {
-  size: 'medium',
-  textLabel: 'Text',
-}
 
 export const Small = Template.bind({});
 Small.args = {
   size: 'small',
-  textLabel: 'Text',
+  subtitleLabel: 'Subtitle',
 };

@@ -1,10 +1,10 @@
 // import { CommonModule } from '@angular/common';
 import { Story, Meta, moduleMetadata, componentWrapperDecorator } from '@storybook/angular';
-import { ButtonComponent } from '../button/button.component';
+import { ButtonComponent } from '../reusable/button/button.component';
 
-import { LinkComponent } from '../link/link.component';
-import { LogoComponent } from '../logo/logo.component';
-import { NavigationComponent } from '../navigation/navigation.component';
+import { LinkComponent } from './link/link.component';
+import { LogoComponent } from './logo/logo.component';
+import { NavigationComponent } from './navigation/navigation.component';
 import { HeaderComponent } from './header.component';
 
 export default {

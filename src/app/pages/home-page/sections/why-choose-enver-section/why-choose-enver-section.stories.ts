@@ -3,9 +3,9 @@ import { Story, Meta, moduleMetadata } from '@storybook/angular';
 import { buttonBigPlay, buttonSmallPlay } from 'src/app/labels/buttonLabels';
 import { textWhyChooseEnver } from 'src/app/labels/textLabels';
 import { titleWhyChoseEnver } from 'src/app/labels/titleLabels';
-import { ButtonComponent } from '../button/button.component';
-import { TextComponent } from '../text/text.component';
-import { TitleComponent } from '../title/title.component';
+import { ButtonComponent } from '../../../../components/reusable/button/button.component';
+import { TextComponent } from '../../../../components/reusable/text/text.component';
+import { TitleComponent } from '../../../../components/reusable/title/title.component';
 
 import { WhyChooseEnverSectionComponent } from './why-choose-enver-section.component';
 

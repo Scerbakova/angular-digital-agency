@@ -4,9 +4,9 @@ import { buttonServices } from 'src/app/labels/buttonLabels';
 import { textPlatform } from 'src/app/labels/textLabels';
 import { titlePlatform } from 'src/app/labels/titleLabels';
 
-import { ButtonComponent } from '../button/button.component';
-import { TextComponent } from '../text/text.component';
-import { TitleComponent } from '../title/title.component';
+import { ButtonComponent } from '../../../../components/reusable/button/button.component';
+import { TextComponent } from '../../../../components/reusable/text/text.component';
+import { TitleComponent } from '../../../../components/reusable/title/title.component';
 import { PlatformSectionComponent } from './platform-section.component';
 
 export default {

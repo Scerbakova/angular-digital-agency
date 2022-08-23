@@ -2,7 +2,7 @@ import { Story, Meta, componentWrapperDecorator } from '@storybook/angular';
 import { TitleComponent } from './title.component';
 
 export default {
-  title: 'DigitalAgency/Atoms/Title',
+  title: 'DigitalAgency/Organisms/Molecules/Atoms/Title',
   decorators: [
     componentWrapperDecorator(
       (stories) => `<div style='backgroundColor: #19191b; height: 100vh; width: 100vw; display: flex; justifyContent: center; alignItems: center'>${stories}</div>`
