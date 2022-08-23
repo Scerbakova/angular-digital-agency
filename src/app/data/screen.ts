@@ -1,0 +1,1 @@
+export const screen: 'wideScreen' | 'mediumScreen' | 'smallScreen' = 'wideScreen';

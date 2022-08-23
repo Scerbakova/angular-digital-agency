@@ -1,0 +1,24 @@
+<section>
+  <div class="portfolio__wrapper">
+    <div class="title__wrapper" [ngSwitch]="screen">
+      <app-title
+        *ngSwitchCase="'mediumScreen'"
+        size="medium"
+        [label]="titlePortfolio"
+      ></app-title>
+      <app-title
+        *ngSwitchCase="'smallScreen'"
+        size="extra-small"
+        [label]="titlePortfolio"
+      ></app-title>
+      <app-title
+        *ngSwitchDefault
+        size="medium"
+        [label]="titlePortfolio"
+      ></app-title>
+    </div>
+    <div class="portfolio-crousel__wrapper">
+      <div class="carousel">KARUSELJ</div>
+    </div>
+  </div>
+</section>

@@ -21,7 +21,11 @@ import { Component, Input } from '@angular/core';
       }
       .title--small {
         font-size: 42px;
-        line-height: 63px;
+        line-height: 79px;
+      }
+      .title--extra-small {
+        font-size: 36px;
+        line-height: 54px;
       }
     `,
   ],
@@ -31,15 +35,17 @@ export class TitleComponent {
   label = 'Title';
 
   @Input()
-  size: 'large' | 'medium' | 'small' = 'large';
+  size: 'large' | 'medium' | 'small' | 'extra-small' = 'large';
 
   public get titleClasses(): string[] {
     if (this.size === 'large') {
       ('title--large');
     } else if (this.size === 'medium') {
       ('title--medium');
-    } else {
+    } else if (this.size === 'small') {
       ('title--small');
+    } else {
+      ('title--extra-small');
     }
     return ['title', `title--${this.size}`];
   }

@@ -1,0 +1,46 @@
+<section>
+  <div class="services__wrapper">
+    <div class="services__text">
+      <img
+        class="picture play__picture"
+        src="../../../assets/images/play.png"
+        alt="play"
+      />
+      <img
+        class="picture add__picture--upper"
+        src="../../../assets/images/add.png"
+        alt="add"
+      />
+      <div class="title__wrapper" [ngSwitch]="screen">
+        <app-title
+          *ngSwitchCase="'mediumScreen'"
+          size="medium"
+          [label]="titleServices"
+        ></app-title>
+        <app-title
+          *ngSwitchCase="'smallScreen'"
+          size="extra-small"
+          [label]="titleServices"
+        ></app-title>
+        <app-title
+          *ngSwitchDefault
+          size="medium"
+          [label]="titleServices"
+        ></app-title>
+      </div>
+    </div>
+    <div class="services-card__wrapper">
+      <app-services-card
+        *ngFor="let service of services"
+        subtitleLabel="{{ service.title }}"
+        textLabel="{{ service.text }}"
+        serviceImage="{{ service.image }}"
+      ></app-services-card>
+      <img
+        class="picture add__picture--lower"
+        src="../../../assets/images/add.png"
+        alt="add"
+      />
+    </div>
+  </div>
+</section>

@@ -1,0 +1,75 @@
+<section>
+  <div class="best--choice__wrapper">
+    <div class="best--choice__text">
+      <div class="title__wrapper" [ngSwitch]="screen">
+        <app-title
+          *ngSwitchCase="'mediumScreen'"
+          size="medium"
+          [label]="titleWhyChoseEnver"
+        ></app-title>
+        <app-title
+          *ngSwitchCase="'smallScreen'"
+          size="extra-small"
+          [label]="titleWhyChoseEnver"
+        ></app-title>
+        <app-title
+          *ngSwitchDefault
+          size="medium"
+          [label]="titleWhyChoseEnver"
+        ></app-title>
+      </div>
+      <div class="text__wrapper">
+        <app-text
+          *ngIf="screen === 'wideScreen'; else smallText"
+          size="large"
+          [textLabel]="textWhyChooseEnver"
+        ></app-text>
+        <ng-template #smallText>
+          <app-text size="small" [textLabel]="textWhyChooseEnver"></app-text>
+        </ng-template>
+      </div>
+    </div>
+    <div class="play__button" class="best--choice__video">
+      <app-button
+        class="play__button"
+        *ngIf="!isPlaying && screen !== 'smallScreen'"
+        (click)="playStopVideo(); player.play()"
+        [round]="true"
+        size="large"
+        ><img class="play" [src]="buttonBigPlayImage"
+      /></app-button>
+      <app-button
+        class="play__button"
+        *ngIf="!isPlaying && screen === 'smallScreen'"
+        (click)="playStopVideo(); player.play()"
+        [round]="true"
+        size="small"
+        ><img class="play" [src]="buttonSmallPlayImage"
+      /></app-button>
+      <video
+        #player
+        (ended)="playStopVideo()"
+        class="video"
+        src="../../../assets/video/video.mp4"
+      ></video>
+      <div class="controls">
+        <div class="buttons">
+          <app-button
+            *ngIf="!isPlaying"
+            (click)="playStopVideo(); player.play()"
+            class="play-pause__button"
+          >
+            <fa-icon [icon]="play"></fa-icon>
+          </app-button>
+          <app-button
+            *ngIf="isPlaying"
+            (click)="playStopVideo(); player.pause()"
+            class="play-pause__button"
+          >
+            <fa-icon [icon]="pause"></fa-icon>
+          </app-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

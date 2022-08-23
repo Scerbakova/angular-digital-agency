@@ -149,7 +149,7 @@
         {
             "name": "ButtonComponent",
             "id": "component-ButtonComponent-1fe13aca4af8871d33ceea8896cb80c4bcc44bc7d84bb0072694c58cb2009ea067024942f562c0b01751a8a5bbbdaa5019acd336c98818ac74f324b7e4f72f75",
-            "file": "src/app/components/button/button.component.ts",
+            "file": "src/app/components/reusable/button/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
@@ -434,7 +434,7 @@
         {
             "name": "LinkComponent",
             "id": "component-LinkComponent-08a6a77c89fedac5380d1bcf0244d48462484a534f8a44c5ac49c328f0d42c1e104a43394533852faea944393f902c7738fbeeccad6e072284be885566fee01f",
-            "file": "src/app/components/link/link.component.ts",
+            "file": "src/app/components/header/link/link.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
@@ -486,7 +486,7 @@
         {
             "name": "LogoComponent",
             "id": "component-LogoComponent-4be12a8f045657d6aaca4f0769d74357f22076fd7c142048ffe44f56947d5ec1c2b2175b18c3ef54208cdd14fc119024cbb1153d0650c954178365803cb00e7f",
-            "file": "src/app/components/logo/logo.component.ts",
+            "file": "src/app/components/header/logo/logo.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
@@ -538,7 +538,7 @@
         {
             "name": "NavigationComponent",
             "id": "component-NavigationComponent-d055d39b4ffa9626a23b987ccbae802603a5cb3f2230a98a056b6cde6d804386d76193a28efe52bbd5b6c53a0074c4afee1cbadafe7e26ee66be75d5bb78aee0",
-            "file": "src/app/components/navigation/navigation.component.ts",
+            "file": "src/app/components/header/navigation/navigation.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
@@ -644,7 +644,7 @@
         {
             "name": "PlatformSectionComponent",
             "id": "component-PlatformSectionComponent-2f9892cd4a4c110974a28808f053b69cfc7f62fa87aa5fa8381249319c88a6a668826eb9e387023b3347b2c54882337f213c7768fb3ab7257587a2eb84cae68c",
-            "file": "src/app/components/platform-section/platform-section.component.ts",
+            "file": "src/app/pages/home-page/sections/platform-section/platform-section.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
@@ -770,7 +770,7 @@
         {
             "name": "ServiceImageComponent",
             "id": "component-ServiceImageComponent-26fbcd883fd680adb503232f228561107c6287c080c404cf9ad32c3c53654f12e992f8fe12e054f00b6f6b9bb2f529fc58ccad598213ecbbe9521e4c35eee959",
-            "file": "src/app/components/service-image/service-image.component.ts",
+            "file": "src/app/pages/home-page/sections/services-section/service-image/service-image.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
@@ -864,7 +864,7 @@
         {
             "name": "ServicesComponent",
             "id": "component-ServicesComponent-344dcb6ed0a68488465673ce6dc9c98921949bc974e895b5168f36161b2f8927dd33c4d2f25dfb93f519fa5e65de14b78d3a7fae91a01ca9d7b55766aaefdfaf",
-            "file": "src/app/components/services-card/services-card.component.ts",
+            "file": "src/app/pages/home-page/sections/services-section/services-card/services-card.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
@@ -930,7 +930,7 @@
         {
             "name": "ServicesSectionComponent",
             "id": "component-ServicesSectionComponent-2bdbe032513865155a46c442e8e48e398cd9085c077b474da276c3877ce1fffd7ac72e0ffeb0ba4de256fa0b81aaf44b7fecd01ddd9a148e726fef4c8f732a1f",
-            "file": "src/app/components/services-section/services-section.component.ts",
+            "file": "src/app/pages/home-page/sections/services-section/services-section.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
@@ -1036,7 +1036,7 @@
         {
             "name": "SubtitleComponent",
             "id": "component-SubtitleComponent-3acccb3edc99e9a8d1965376c64bad0fcfa7714e267d68b9dca2461f07d6896af104ce28096a8db4c4ffc812552375db6c77a183e1422588f94cc3aea8066022",
-            "file": "src/app/components/subtitle/subtitle.component.ts",
+            "file": "src/app/components/reusable/subtitle/subtitle.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
@@ -1099,7 +1099,7 @@
         {
             "name": "TextComponent",
             "id": "component-TextComponent-772cb932bc975767952c2bbed53f6c4d42e0db1d3b7aa384997d7f7ea7dc392008086297b2d769eda73fa825f7682a05de85406303eaffb9ac903d51a1228c57",
-            "file": "src/app/components/text/text.component.ts",
+            "file": "src/app/components/reusable/text/text.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
@@ -1164,7 +1164,7 @@
         {
             "name": "TitleComponent",
             "id": "component-TitleComponent-eab6d0409fe3539c2088279b511ebe44271690abb2747884a230b31df99c1c88dbb1e7d7aee8cca44b59af589ace3fc99dd09ff9b55e9f6f6bbe01612d5a0fd2",
-            "file": "src/app/components/title/title.component.ts",
+            "file": "src/app/components/reusable/title/title.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
@@ -1227,7 +1227,7 @@
         {
             "name": "WhyChooseEnverSectionComponent",
             "id": "component-WhyChooseEnverSectionComponent-2ccda06e2f8f4d25388bee93899cf203dab279909e1afd5491d8d79fbf2b043aafe2ebc93af277e0abab4a89de941e91d8d208a232002e8022f1a4086f5a090b",
-            "file": "src/app/components/why-choose-enver-section/why-choose-enver-section.component.ts",
+            "file": "src/app/pages/home-page/sections/why-choose-enver-section/why-choose-enver-section.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
@@ -1394,13 +1394,13 @@
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-7ed887dce7fda09f5615bd3921b6dc82f102b18e4fa92d4fdbfdc7b2632880d95ce2b38b14b9065bf316a5c21661e771ed969b93397ab9b1cf44f32edf7b1c4b",
+            "id": "module-AppModule-ad1019f85f76cff21df18f199554b9aecec31b626f628ce359a6ba1bfadb7876e4bc5a0f1c05b16a89f46a3804ee4e47df314e1c3ef6070ff552752d2fca2457",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { ButtonComponent } from './components/button/button.component';\nimport { LinkComponent } from './components/link/link.component';\nimport { NavigationComponent } from './components/navigation/navigation.component';\nimport { LogoComponent } from './components/logo/logo.component';\nimport { TitleComponent } from './components/title/title.component';\nimport { TextComponent } from './components/text/text.component';\nimport { HeaderComponent } from './components/header/header.component';\nimport { PlatformSectionComponent } from './components/platform-section/platform-section.component';\nimport { WhyChooseEnverSectionComponent } from './components/why-choose-enver-section/why-choose-enver-section.component';\nimport { FontAwesomeModule } from '@fortawesome/angular-fontawesome';\nimport { HomePageComponent } from './pages/home-page/home-page.component';\nimport { ServicePageComponent } from './pages/service-page/service-page.component';\nimport { OurProjectPageComponent } from './pages/our-project-page/our-project-page.component';\nimport { AboutPageComponent } from './pages/about-page/about-page.component';\nimport { ServicesSectionComponent } from './components/services-section/services-section.component';\nimport { ServicesComponent } from './components/services-card/services-card.component';\nimport { SubtitleComponent } from './components/subtitle/subtitle.component';\nimport { ServiceImageComponent } from './components/service-image/service-image.component';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    ButtonComponent,\n    LinkComponent,\n    NavigationComponent,\n    LogoComponent,\n    TitleComponent,\n    TextComponent,\n    HeaderComponent,\n    PlatformSectionComponent,\n    WhyChooseEnverSectionComponent,\n    HomePageComponent,\n    ServicePageComponent,\n    OurProjectPageComponent,\n    AboutPageComponent,\n    ServicesSectionComponent,\n    ServicesComponent,\n    SubtitleComponent,\n    ServiceImageComponent,\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    FontAwesomeModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { ButtonComponent } from './components/reusable/button/button.component';\nimport { LinkComponent } from './components/header/link/link.component';\nimport { NavigationComponent } from './components/header/navigation/navigation.component';\nimport { LogoComponent } from './components/header/logo/logo.component';\nimport { TitleComponent } from './components/reusable/title/title.component';\nimport { TextComponent } from './components/reusable/text/text.component';\nimport { HeaderComponent } from './components/header/header.component';\nimport { PlatformSectionComponent } from './pages/home-page/sections/platform-section/platform-section.component';\nimport { WhyChooseEnverSectionComponent } from './pages/home-page/sections/why-choose-enver-section/why-choose-enver-section.component';\nimport { FontAwesomeModule } from '@fortawesome/angular-fontawesome';\nimport { HomePageComponent } from './pages/home-page/home-page.component';\nimport { ServicePageComponent } from './pages/service-page/service-page.component';\nimport { OurProjectPageComponent } from './pages/our-project-page/our-project-page.component';\nimport { AboutPageComponent } from './pages/about-page/about-page.component';\nimport { ServicesSectionComponent } from './pages/home-page/sections/services-section/services-section.component';\nimport { ServicesComponent } from './pages/home-page/sections/services-section/services-card/services-card.component';\nimport { SubtitleComponent } from './components/reusable/subtitle/subtitle.component';\nimport { ServiceImageComponent } from './pages/home-page/sections/services-section/service-image/service-image.component';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    ButtonComponent,\n    LinkComponent,\n    NavigationComponent,\n    LogoComponent,\n    TitleComponent,\n    TextComponent,\n    HeaderComponent,\n    PlatformSectionComponent,\n    WhyChooseEnverSectionComponent,\n    HomePageComponent,\n    ServicePageComponent,\n    OurProjectPageComponent,\n    AboutPageComponent,\n    ServicesSectionComponent,\n    ServicesComponent,\n    SubtitleComponent,\n    ServiceImageComponent,\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    FontAwesomeModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -1534,7 +1534,7 @@
                 "name": "BigRound",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/button/button.stories.ts",
+                "file": "src/app/components/reusable/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1614,7 +1614,7 @@
                 "name": "Image",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/service-image/service-image.stories.ts",
+                "file": "src/app/pages/home-page/sections/services-section/service-image/service-image.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1624,7 +1624,7 @@
                 "name": "Large",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/subtitle/subtitle.stories.ts",
+                "file": "src/app/components/reusable/text/text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1634,7 +1634,7 @@
                 "name": "Large",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/title/title.stories.ts",
+                "file": "src/app/components/reusable/title/title.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1644,7 +1644,7 @@
                 "name": "Large",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/text/text.stories.ts",
+                "file": "src/app/components/reusable/subtitle/subtitle.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1654,7 +1654,7 @@
                 "name": "Logo",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/logo/logo.stories.ts",
+                "file": "src/app/components/header/logo/logo.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1664,7 +1664,7 @@
                 "name": "Medium",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/title/title.stories.ts",
+                "file": "src/app/components/reusable/text/text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1674,7 +1674,7 @@
                 "name": "Medium",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/text/text.stories.ts",
+                "file": "src/app/components/reusable/title/title.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1684,7 +1684,7 @@
                 "name": "Navigation",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/navigation/navigation.stories.ts",
+                "file": "src/app/components/header/navigation/navigation.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1694,7 +1694,7 @@
                 "name": "NavigationLink",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/link/link.stories.ts",
+                "file": "src/app/components/header/link/link.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1704,7 +1704,7 @@
                 "name": "Platform",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/platform-section/platform-section.stories.ts",
+                "file": "src/app/pages/home-page/sections/platform-section/platform-section.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1714,7 +1714,7 @@
                 "name": "Platform",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/why-choose-enver-section/why-choose-enver-section.stories.ts",
+                "file": "src/app/pages/home-page/sections/why-choose-enver-section/why-choose-enver-section.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1724,7 +1724,7 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/button/button.stories.ts",
+                "file": "src/app/components/reusable/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1743,7 +1743,7 @@
                 "name": "Secondary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/button/button.stories.ts",
+                "file": "src/app/components/reusable/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1763,7 +1763,7 @@
                 "name": "Small",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/subtitle/subtitle.stories.ts",
+                "file": "src/app/components/reusable/text/text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1773,7 +1773,7 @@
                 "name": "Small",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/title/title.stories.ts",
+                "file": "src/app/components/reusable/title/title.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1783,7 +1783,7 @@
                 "name": "Small",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/text/text.stories.ts",
+                "file": "src/app/components/reusable/subtitle/subtitle.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1793,21 +1793,11 @@
                 "name": "SmallRound",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/button/button.stories.ts",
+                "file": "src/app/components/reusable/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/link/link.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<LinkComponent>",
-                "defaultValue": "(args: LinkComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -1823,7 +1813,17 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/logo/logo.stories.ts",
+                "file": "src/app/components/header/link/link.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<LinkComponent>",
+                "defaultValue": "(args: LinkComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/header/logo/logo.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<LogoComponent>",
@@ -1833,17 +1833,7 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/button/button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ButtonComponent>",
-                "defaultValue": "(args: ButtonComponent) => ({\n  component: ButtonComponent,\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/navigation/navigation.stories.ts",
+                "file": "src/app/components/header/navigation/navigation.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<NavigationComponent>",
@@ -1853,47 +1843,17 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/platform-section/platform-section.stories.ts",
+                "file": "src/app/components/reusable/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<PlatformSectionComponent>",
-                "defaultValue": "(args: PlatformSectionComponent) => ({\n  props: args,\n})"
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\n  component: ButtonComponent,\n  props: args,\n})"
             },
             {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/service-image/service-image.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ServiceImageComponent>",
-                "defaultValue": "(args: ServiceImageComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/subtitle/subtitle.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<SubtitleComponent>",
-                "defaultValue": "(args: SubtitleComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/title/title.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<TitleComponent>",
-                "defaultValue": "(args: TitleComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/text/text.stories.ts",
+                "file": "src/app/components/reusable/text/text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<TextComponent>",
@@ -1903,11 +1863,51 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/why-choose-enver-section/why-choose-enver-section.stories.ts",
+                "file": "src/app/components/reusable/title/title.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TitleComponent>",
+                "defaultValue": "(args: TitleComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/reusable/subtitle/subtitle.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<SubtitleComponent>",
+                "defaultValue": "(args: SubtitleComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/pages/home-page/sections/platform-section/platform-section.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<PlatformSectionComponent>",
+                "defaultValue": "(args: PlatformSectionComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/pages/home-page/sections/why-choose-enver-section/why-choose-enver-section.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<WhyChooseEnverSectionComponent>",
                 "defaultValue": "(args: WhyChooseEnverSectionComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/pages/home-page/sections/services-section/service-image/service-image.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ServiceImageComponent>",
+                "defaultValue": "(args: ServiceImageComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "textPlatform",
@@ -1964,12 +1964,12 @@
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
-            "src/app/components/button/button.stories.ts": [
+            "src/app/components/reusable/button/button.stories.ts": [
                 {
                     "name": "BigRound",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/button/button.stories.ts",
+                    "file": "src/app/components/reusable/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -1979,7 +1979,7 @@
                     "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/button/button.stories.ts",
+                    "file": "src/app/components/reusable/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -1989,7 +1989,7 @@
                     "name": "Secondary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/button/button.stories.ts",
+                    "file": "src/app/components/reusable/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -1999,7 +1999,7 @@
                     "name": "SmallRound",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/button/button.stories.ts",
+                    "file": "src/app/components/reusable/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2009,7 +2009,7 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/button/button.stories.ts",
+                    "file": "src/app/components/reusable/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<ButtonComponent>",
@@ -2115,12 +2115,12 @@
                     "defaultValue": "(args: HeaderComponent) => ({\n  props: args,\n})"
                 }
             ],
-            "src/app/components/service-image/service-image.stories.ts": [
+            "src/app/pages/home-page/sections/services-section/service-image/service-image.stories.ts": [
                 {
                     "name": "Image",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/service-image/service-image.stories.ts",
+                    "file": "src/app/pages/home-page/sections/services-section/service-image/service-image.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2130,51 +2130,19 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/service-image/service-image.stories.ts",
+                    "file": "src/app/pages/home-page/sections/services-section/service-image/service-image.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<ServiceImageComponent>",
                     "defaultValue": "(args: ServiceImageComponent) => ({\n  props: args,\n})"
                 }
             ],
-            "src/app/components/subtitle/subtitle.stories.ts": [
+            "src/app/components/reusable/text/text.stories.ts": [
                 {
                     "name": "Large",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/subtitle/subtitle.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Small",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/subtitle/subtitle.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/subtitle/subtitle.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<SubtitleComponent>",
-                    "defaultValue": "(args: SubtitleComponent) => ({\n  props: args,\n})"
-                }
-            ],
-            "src/app/components/title/title.stories.ts": [
-                {
-                    "name": "Large",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/title/title.stories.ts",
+                    "file": "src/app/components/reusable/text/text.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2184,7 +2152,7 @@
                     "name": "Medium",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/title/title.stories.ts",
+                    "file": "src/app/components/reusable/text/text.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2194,7 +2162,7 @@
                     "name": "Small",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/title/title.stories.ts",
+                    "file": "src/app/components/reusable/text/text.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2204,61 +2172,39 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/title/title.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<TitleComponent>",
-                    "defaultValue": "(args: TitleComponent) => ({\n  props: args,\n})"
-                }
-            ],
-            "src/app/components/text/text.stories.ts": [
-                {
-                    "name": "Large",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/text/text.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Medium",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/text/text.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Small",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/text/text.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/text/text.stories.ts",
+                    "file": "src/app/components/reusable/text/text.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<TextComponent>",
                     "defaultValue": "(args: TextComponent) => ({\n  props: args,\n})"
                 }
             ],
-            "src/app/components/logo/logo.stories.ts": [
+            "src/app/components/reusable/title/title.stories.ts": [
                 {
-                    "name": "Logo",
+                    "name": "Large",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/logo/logo.stories.ts",
+                    "file": "src/app/components/reusable/title/title.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Medium",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/reusable/title/title.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/reusable/title/title.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2268,19 +2214,73 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/logo/logo.stories.ts",
+                    "file": "src/app/components/reusable/title/title.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<TitleComponent>",
+                    "defaultValue": "(args: TitleComponent) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/app/components/reusable/subtitle/subtitle.stories.ts": [
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/reusable/subtitle/subtitle.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/reusable/subtitle/subtitle.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/reusable/subtitle/subtitle.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<SubtitleComponent>",
+                    "defaultValue": "(args: SubtitleComponent) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/app/components/header/logo/logo.stories.ts": [
+                {
+                    "name": "Logo",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/header/logo/logo.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/header/logo/logo.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<LogoComponent>",
                     "defaultValue": "(args: LogoComponent) => ({\n  props: args,\n})"
                 }
             ],
-            "src/app/components/navigation/navigation.stories.ts": [
+            "src/app/components/header/navigation/navigation.stories.ts": [
                 {
                     "name": "Navigation",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/navigation/navigation.stories.ts",
+                    "file": "src/app/components/header/navigation/navigation.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2290,19 +2290,19 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/navigation/navigation.stories.ts",
+                    "file": "src/app/components/header/navigation/navigation.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<NavigationComponent>",
                     "defaultValue": "(args: NavigationComponent) => ({\n  props: args,\n})"
                 }
             ],
-            "src/app/components/link/link.stories.ts": [
+            "src/app/components/header/link/link.stories.ts": [
                 {
                     "name": "NavigationLink",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/link/link.stories.ts",
+                    "file": "src/app/components/header/link/link.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2312,19 +2312,19 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/link/link.stories.ts",
+                    "file": "src/app/components/header/link/link.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<LinkComponent>",
                     "defaultValue": "(args: LinkComponent) => ({\n  props: args,\n})"
                 }
             ],
-            "src/app/components/platform-section/platform-section.stories.ts": [
+            "src/app/pages/home-page/sections/platform-section/platform-section.stories.ts": [
                 {
                     "name": "Platform",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/platform-section/platform-section.stories.ts",
+                    "file": "src/app/pages/home-page/sections/platform-section/platform-section.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2334,19 +2334,19 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/platform-section/platform-section.stories.ts",
+                    "file": "src/app/pages/home-page/sections/platform-section/platform-section.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<PlatformSectionComponent>",
                     "defaultValue": "(args: PlatformSectionComponent) => ({\n  props: args,\n})"
                 }
             ],
-            "src/app/components/why-choose-enver-section/why-choose-enver-section.stories.ts": [
+            "src/app/pages/home-page/sections/why-choose-enver-section/why-choose-enver-section.stories.ts": [
                 {
                     "name": "Platform",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/why-choose-enver-section/why-choose-enver-section.stories.ts",
+                    "file": "src/app/pages/home-page/sections/why-choose-enver-section/why-choose-enver-section.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2356,7 +2356,7 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/why-choose-enver-section/why-choose-enver-section.stories.ts",
+                    "file": "src/app/pages/home-page/sections/why-choose-enver-section/why-choose-enver-section.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<WhyChooseEnverSectionComponent>",
@@ -2493,65 +2493,6 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/button/button.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "ButtonComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/7",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/button/button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "BigRound",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/button/button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Primary",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/button/button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Secondary",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/button/button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "SmallRound",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/button/button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
                 "filePath": "src/app/components/header/header.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -2581,7 +2522,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/link/link.component.ts",
+                "filePath": "src/app/components/header/link/link.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "LinkComponent",
@@ -2590,7 +2531,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/link/link.stories.ts",
+                "filePath": "src/app/components/header/link/link.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2600,7 +2541,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/link/link.stories.ts",
+                "filePath": "src/app/components/header/link/link.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2610,7 +2551,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/logo/logo.component.ts",
+                "filePath": "src/app/components/header/logo/logo.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "LogoComponent",
@@ -2619,7 +2560,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/logo/logo.stories.ts",
+                "filePath": "src/app/components/header/logo/logo.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2629,7 +2570,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/logo/logo.stories.ts",
+                "filePath": "src/app/components/header/logo/logo.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2639,7 +2580,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/navigation/navigation.component.ts",
+                "filePath": "src/app/components/header/navigation/navigation.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "NavigationComponent",
@@ -2648,7 +2589,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/navigation/navigation.stories.ts",
+                "filePath": "src/app/components/header/navigation/navigation.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2658,7 +2599,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/navigation/navigation.stories.ts",
+                "filePath": "src/app/components/header/navigation/navigation.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2668,83 +2609,66 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/platform-section/platform-section.component.ts",
+                "filePath": "src/app/components/reusable/button/button.component.ts",
                 "type": "component",
                 "linktype": "component",
-                "name": "PlatformSectionComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/9",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/platform-section/platform-section.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Platform",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/platform-section/platform-section.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/service-image/service-image.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "ServiceImageComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/2",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/service-image/service-image.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Image",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/service-image/service-image.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/services-card/services-card.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "ServicesComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/4",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/services-section/services-section.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "ServicesSectionComponent",
+                "name": "ButtonComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/7",
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/subtitle/subtitle.component.ts",
+                "filePath": "src/app/components/reusable/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "BigRound",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/reusable/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/reusable/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/reusable/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SmallRound",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/reusable/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/reusable/subtitle/subtitle.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "SubtitleComponent",
@@ -2753,7 +2677,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/subtitle/subtitle.stories.ts",
+                "filePath": "src/app/components/reusable/subtitle/subtitle.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2763,7 +2687,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/subtitle/subtitle.stories.ts",
+                "filePath": "src/app/components/reusable/subtitle/subtitle.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2773,7 +2697,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/subtitle/subtitle.stories.ts",
+                "filePath": "src/app/components/reusable/subtitle/subtitle.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2783,7 +2707,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/text/text.component.ts",
+                "filePath": "src/app/components/reusable/text/text.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "TextComponent",
@@ -2792,7 +2716,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/text/text.stories.ts",
+                "filePath": "src/app/components/reusable/text/text.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2802,7 +2726,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/text/text.stories.ts",
+                "filePath": "src/app/components/reusable/text/text.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2812,7 +2736,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/text/text.stories.ts",
+                "filePath": "src/app/components/reusable/text/text.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2822,7 +2746,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/text/text.stories.ts",
+                "filePath": "src/app/components/reusable/text/text.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2832,7 +2756,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/title/title.component.ts",
+                "filePath": "src/app/components/reusable/title/title.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "TitleComponent",
@@ -2841,7 +2765,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/title/title.stories.ts",
+                "filePath": "src/app/components/reusable/title/title.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2851,7 +2775,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/title/title.stories.ts",
+                "filePath": "src/app/components/reusable/title/title.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2861,7 +2785,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/title/title.stories.ts",
+                "filePath": "src/app/components/reusable/title/title.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2871,36 +2795,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/title/title.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/why-choose-enver-section/why-choose-enver-section.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "WhyChooseEnverSectionComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/13",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/why-choose-enver-section/why-choose-enver-section.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Platform",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/why-choose-enver-section/why-choose-enver-section.stories.ts",
+                "filePath": "src/app/components/reusable/title/title.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -3024,6 +2919,111 @@
                 "name": "HomePageComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/home-page/sections/platform-section/platform-section.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PlatformSectionComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/9",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/home-page/sections/platform-section/platform-section.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Platform",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/home-page/sections/platform-section/platform-section.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/home-page/sections/services-section/service-image/service-image.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ServiceImageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/home-page/sections/services-section/service-image/service-image.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Image",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/home-page/sections/services-section/service-image/service-image.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/home-page/sections/services-section/services-card/services-card.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ServicesComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/home-page/sections/services-section/services-section.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ServicesSectionComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/home-page/sections/why-choose-enver-section/why-choose-enver-section.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "WhyChooseEnverSectionComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/13",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/home-page/sections/why-choose-enver-section/why-choose-enver-section.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Platform",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/home-page/sections/why-choose-enver-section/why-choose-enver-section.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
