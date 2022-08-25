@@ -17,53 +17,31 @@
         [label]="titlePortfolio"
       ></app-title>
     </div>
-    <div class="portfolio-crousel__wrapper">
-      <div [ngStyle]="{left: offset }" class="carousel" (click)="carouselMoves()" >
-        <div class="carousel__item carousel__item-upper">
-          <div class="carousel__image-wrapper">
-            <img
-              src="../../../assets/images/carousel_image_1.png"
-              alt="first portfolio item"
-            />
-          </div>
+    <div class="portfolio-carousel__container">
+      <div class="portfolio-carousel__wrapper">
+        <div *ngFor="let portfolioPicture of portfolioPictures">
+          <app-image-card
+            [class]="portfolioPicture.class"
+            [picture]="portfolioPicture.picture"
+          ></app-image-card>
         </div>
-
-        <div class="carousel__item carousel__item-middle">
-          <div class="carousel__image-wrapper">
-            <img
-              src="../../../assets/images/carousel_image_2.png"
-              alt="first portfolio item"
-            />
-          </div>
-        </div>
-
-        <div class="carousel__item carousel__item-lower">
-          <div class="carousel__image-wrapper">
-            <img
-              src="../../../assets/images/carousel_image_3.png"
-              alt="first portfolio item"
-            />
-          </div>
-        </div>
-
-            <div class="carousel__item carousel__item-upper">
-              <div class="carousel__image-wrapper">
-                <img
-                  src="../../../assets/images/carousel_image_1.png"
-                  alt="first portfolio item"
-                />
-              </div>
-            </div>
-
-            <div class="carousel__item carousel__item-middle">
-              <div class="carousel__image-wrapper">
-                <img
-                  src="../../../assets/images/carousel_image_2.png"
-                  alt="first portfolio item"
-                />
-              </div>
-            </div>
       </div>
+    </div>
+    <div (click)="carouselMoves()" *ngIf="screen !== 'smallScreen'" class="carousel__buttons">
+      <div *ngFor="let button of buttons">
+        <img src="{{ button }}" alt="button" />
+      </div>
+    </div>
+    <div
+      class="carousel__buttons carousel__buttons--round"
+      *ngIf="screen === 'smallScreen'"
+    >
+      <button (click)="carouselMoves()" [disabled]="leftButtonDisabled" class="circle">
+        <div class="arrow arrow-left"></div>
+      </button>
+      <button (click)="carouselMoves()" [disabled]="rightButtonDisabled" class="circle">
+        <div class="arrow arrow-right"></div>
+      </button>
     </div>
   </div>
 </section>
