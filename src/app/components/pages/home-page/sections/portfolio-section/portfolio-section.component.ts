@@ -22,7 +22,7 @@ export class PortfolioSectionComponent {
 
   titlePortfolio = titlePortfolio.title;
 
-  carouselMoves() {
+  carouselMovesForward() {
     this.buttons.unshift(this.buttons[2]);
     this.buttons.pop();
 
@@ -34,17 +34,34 @@ export class PortfolioSectionComponent {
       picture: (item.picture = pictures[this.portfolioPictures.indexOf(item)]),
     }));
     this.activePortfolioPicture = this.portfolioPictures[0];
-    console.log(this.activePortfolioPicture)
+    console.log(this.activePortfolioPicture);
 
+    this.disableButtons();
+  }
+
+  carouselMovesBackwards() {
+    const pictures = this.portfolioPictures.map((item) => item.picture);
+    const firstPicture = pictures.shift();
+    pictures.push(firstPicture!);
+    this.portfolioPictures.map((item) => ({
+      ...item,
+      picture: (item.picture = pictures[this.portfolioPictures.indexOf(item)]),
+    }));
+    this.activePortfolioPicture = this.portfolioPictures[0];
+
+    this.disableButtons();
+  }
+
+  disableButtons() {
     if (this.screen === 'smallScreen') {
       this.activePortfolioPicture.picture ===
       '../../../assets/images/carousel_image_1.png'
         ? (this.leftButtonDisabled = true)
-        : this.leftButtonDisabled = false;
+        : (this.leftButtonDisabled = false);
       this.activePortfolioPicture.picture ===
-      '../../../assets/images/carousel_image_3.png'
+      '../../../assets/images/carousel_image_2.png'
         ? (this.rightButtonDisabled = true)
-        : this.rightButtonDisabled = false;
+        : (this.rightButtonDisabled = false);
     }
   }
 }

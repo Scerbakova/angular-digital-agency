@@ -27,7 +27,7 @@
         </div>
       </div>
     </div>
-    <div (click)="carouselMoves()" *ngIf="screen !== 'smallScreen'" class="carousel__buttons">
+    <div (click)="carouselMovesForward()" *ngIf="screen !== 'smallScreen'" class="carousel__buttons">
       <div *ngFor="let button of buttons">
         <img src="{{ button }}" alt="button" />
       </div>
@@ -36,10 +36,10 @@
       class="carousel__buttons carousel__buttons--round"
       *ngIf="screen === 'smallScreen'"
     >
-      <button (click)="carouselMoves()" [disabled]="leftButtonDisabled" class="circle">
+      <button (click)="carouselMovesBackwards()" [disabled]="leftButtonDisabled" class="circle">
         <div class="arrow arrow-left"></div>
       </button>
-      <button (click)="carouselMoves()" [disabled]="rightButtonDisabled" class="circle">
+      <button (click)="carouselMovesForward()" [disabled]="rightButtonDisabled" class="circle">
         <div class="arrow arrow-right"></div>
       </button>
     </div>
