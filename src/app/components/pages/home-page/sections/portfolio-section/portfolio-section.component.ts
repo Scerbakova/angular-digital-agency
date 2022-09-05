@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import {
   carouselPageImage,
   PortfolioPicture,
@@ -19,22 +19,41 @@ export class PortfolioSectionComponent {
   activePortfolioPicture!: PortfolioPicture;
   leftButtonDisabled = true;
   rightButtonDisabled = false;
+  arrowLeft = '../../../assets/images/arrow-left.png';
+  arrowRight = '../../../assets/images/arrow-right.png';
 
   titlePortfolio = titlePortfolio.title;
 
-  carouselMovesForward() {
-    this.buttons.unshift(this.buttons[2]);
-    this.buttons.pop();
+  disableButtons() {
+    if (this.screen === 'smallScreen') {
+      this.activePortfolioPicture.picture ===
+        '../../../assets/images/carousel_image_1.png'
+        ? (this.leftButtonDisabled = true)
+        : (this.leftButtonDisabled = false);
+      this.activePortfolioPicture.picture ===
+      '../../../assets/images/carousel_image_2.png'
+        ? (this.rightButtonDisabled = true)
+        : (this.rightButtonDisabled = false);
+    }
+  }
 
-    let pictures = this.portfolioPictures.map((item) => item.picture);
-    pictures.unshift(pictures[2]);
-    pictures.pop();
+  assignPictureToPortfolioPicture(pictures: string[]) {
     this.portfolioPictures.map((item) => ({
       ...item,
       picture: (item.picture = pictures[this.portfolioPictures.indexOf(item)]),
     }));
     this.activePortfolioPicture = this.portfolioPictures[0];
-    console.log(this.activePortfolioPicture);
+  }
+
+  carouselMovesForward() {
+    this.buttons.unshift(this.buttons[2]);
+    this.buttons.pop();
+
+    const pictures = this.portfolioPictures.map((item) => item.picture);
+    pictures.unshift(pictures[2]);
+    pictures.pop();
+
+    this.assignPictureToPortfolioPicture(pictures);
 
     this.disableButtons();
   }
@@ -43,25 +62,10 @@ export class PortfolioSectionComponent {
     const pictures = this.portfolioPictures.map((item) => item.picture);
     const firstPicture = pictures.shift();
     pictures.push(firstPicture!);
-    this.portfolioPictures.map((item) => ({
-      ...item,
-      picture: (item.picture = pictures[this.portfolioPictures.indexOf(item)]),
-    }));
-    this.activePortfolioPicture = this.portfolioPictures[0];
+
+    this.assignPictureToPortfolioPicture(pictures);
 
     this.disableButtons();
-  }
-
-  disableButtons() {
-    if (this.screen === 'smallScreen') {
-      this.activePortfolioPicture.picture ===
-      '../../../assets/images/carousel_image_1.png'
-        ? (this.leftButtonDisabled = true)
-        : (this.leftButtonDisabled = false);
-      this.activePortfolioPicture.picture ===
-      '../../../assets/images/carousel_image_2.png'
-        ? (this.rightButtonDisabled = true)
-        : (this.rightButtonDisabled = false);
-    }
+    console.log(this.leftButtonDisabled);
   }
 }

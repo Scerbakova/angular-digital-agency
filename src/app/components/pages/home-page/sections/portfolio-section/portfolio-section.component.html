@@ -16,6 +16,11 @@
         size="medium"
         [label]="titlePortfolio"
       ></app-title>
+      <img
+        class="picture circles__picture"
+        src="../../../assets/images/circles.png"
+        alt="circles"
+      />
     </div>
     <div class="portfolio-carousel__container">
       <div class="portfolio-carousel__wrapper">
@@ -27,7 +32,11 @@
         </div>
       </div>
     </div>
-    <div (click)="carouselMovesForward()" *ngIf="screen !== 'smallScreen'" class="carousel__buttons">
+    <div
+      (click)="carouselMovesForward()"
+      *ngIf="screen !== 'smallScreen'"
+      class="carousel__buttons"
+    >
       <div *ngFor="let button of buttons">
         <img src="{{ button }}" alt="button" />
       </div>
@@ -36,12 +45,27 @@
       class="carousel__buttons carousel__buttons--round"
       *ngIf="screen === 'smallScreen'"
     >
-      <button (click)="carouselMovesBackwards()" [disabled]="leftButtonDisabled" class="circle">
-        <div class="arrow arrow-left"></div>
-      </button>
-      <button (click)="carouselMovesForward()" [disabled]="rightButtonDisabled" class="circle">
-        <div class="arrow arrow-right"></div>
-      </button>
+      <app-button
+        class="carousel-control__button"
+        (click)="carouselMovesBackwards()"
+        [round]="true"
+        size="extra-small"
+        [disabled]="leftButtonDisabled"
+        ><img class="arrow" [src]="arrowLeft"
+      /></app-button>
+      <app-button
+        class="carousel-control__button"
+        (click)="carouselMovesForward()"
+        [round]="true"
+        size="extra-small"
+        [disabled]="rightButtonDisabled"
+        ><img class="arrow" [src]="arrowRight"
+      /></app-button>
     </div>
+    <img
+      class="picture zigzag__picture"
+      src="../../../assets/images/zigzag.png"
+      alt="zigzag"
+    />
   </div>
 </section>

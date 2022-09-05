@@ -7,7 +7,23 @@ import { Component, Input } from '@angular/core';
       <div class="card__content">
         <app-service-image [serviceImage]="serviceImage"></app-service-image>
         <app-subtitle [subtitleLabel]="subtitleLabel"></app-subtitle>
-        <app-text [textLabel]="textLabel" size="medium"></app-text>
+        <div [ngSwitch]="screen">
+          <app-text
+            *ngSwitchCase="'mediumScreen'"
+            [textLabel]="textLabel"
+            size="medium"
+          ></app-text>
+          <app-text
+            *ngSwitchCase="'smallScreen'"
+            [textLabel]="textLabel"
+            size="small"
+          ></app-text>
+          <app-text
+            *ngSwitchDefault
+            size="medium"
+            [textLabel]="textLabel"
+          ></app-text>
+        </div>
       </div>
     </div>
   `,
@@ -23,4 +39,6 @@ export class ServicesComponent {
   @Input()
   serviceImage = '';
 
+  @Input()
+  screen!: string;
 }

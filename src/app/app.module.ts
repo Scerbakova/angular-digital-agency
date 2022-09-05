@@ -4,9 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './components/reusable/button/button.component';
-import { LinkComponent } from './components/header/link/link.component';
-import { NavigationComponent } from './components/header/navigation/navigation.component';
-import { LogoComponent } from './components/header/logo/logo.component';
+import { LinkComponent } from './components/reusable/navigation/link/link.component';
+import { NavigationComponent } from './components/reusable/navigation/navigation.component';
+import { LogoComponent } from './components/reusable/logo/logo.component';
 import { TitleComponent } from './components/reusable/title/title.component';
 import { TextComponent } from './components/reusable/text/text.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -23,6 +23,11 @@ import { SubtitleComponent } from './components/reusable/subtitle/subtitle.compo
 import { ServiceImageComponent } from './components/pages/home-page/sections/services-section/service-image/service-image.component';
 import { PortfolioSectionComponent } from './components/pages/home-page/sections/portfolio-section/portfolio-section.component';
 import { ImageCardComponent } from './components/pages/home-page/sections/portfolio-section/image-card/image-card.component';
+import { ContactSectionComponent } from './components/pages/home-page/sections/contact-section/contact-section.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { SupportPageComponent } from './components/pages/support-page/support-page.component';
+import { PrivacyPolicyPageComponent } from './components/pages/privacy-policy-page/privacy-policy-page.component';
+import { TermsAndConditionsPageComponent } from './components/pages/terms-and-conditions-page/terms-and-conditions-page.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +51,11 @@ import { ImageCardComponent } from './components/pages/home-page/sections/portfo
     ServiceImageComponent,
     PortfolioSectionComponent,
     ImageCardComponent,
+    ContactSectionComponent,
+    FooterComponent,
+    SupportPageComponent,
+    PrivacyPolicyPageComponent,
+    TermsAndConditionsPageComponent,
   ],
   imports: [
     BrowserModule,

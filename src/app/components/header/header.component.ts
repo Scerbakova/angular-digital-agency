@@ -1,4 +1,6 @@
-import { Component, HostListener, Input } from '@angular/core';
+import { Component, HostListener, Input, OnInit, Output } from '@angular/core';
+import { buttonContact } from 'src/app/data/buttons';
+import { header, Navigation } from 'src/app/data/navigation';
 
 @Component({
   selector: 'app-header',
@@ -7,13 +9,16 @@ import { Component, HostListener, Input } from '@angular/core';
       [ngClass]="headerClass"
     >
       <app-logo></app-logo>
-      <app-navigation></app-navigation>
-      <app-button *ngIf="wideScreen" label="Contact us"></app-button>
+      <app-navigation
+        [linksAndLabels]="linksAndLabels"
+      ></app-navigation>
+      <app-button *ngIf="wideScreen" [label]="buttonContactTitle"></app-button>
     </header>
     <ng-template #smallScreen>
       <header [ngClass]="headerClass">
         <app-logo></app-logo>
         <app-navigation
+          [linksAndLabels]="linksAndLabels"
           [burger]="true"
           *ngIf="showMenu === true"
         ></app-navigation>
@@ -46,6 +51,10 @@ export class HeaderComponent {
   showMenu = false;
 
   innerWidth: number | undefined;
+
+  buttonContactTitle = buttonContact.title;
+
+  linksAndLabels = header;
 
   @HostListener('window:resize')
   onResize() {

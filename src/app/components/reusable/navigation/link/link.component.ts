@@ -2,14 +2,16 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-link',
-  template: `<li>
+  template: `
+  <li>
     <a
       [routerLink]="link"
       routerLinkActive="navbar__link-active"
       class="navbar__link"
       >{{ label }}</a
     >
-  </li>`,
+  </li>
+  `,
   styles: [
     `
       .navbar__link {
@@ -25,9 +27,10 @@ import { Component, Input } from '@angular/core';
   ],
 })
 export class LinkComponent {
-  @Input()
-  label = 'Home';
 
   @Input()
-  link = '';
+  link!: string
+  
+  @Input()
+    label!: string
 }

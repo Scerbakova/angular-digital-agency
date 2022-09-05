@@ -13,3 +13,7 @@ export const titleServices = {
 export const titlePortfolio = {
   title: 'Our Awesome Portofolio'
 }
+
+export const titleContact = {
+  title: 'Contact us for the service you want to use'
+}

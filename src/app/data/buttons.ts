@@ -10,3 +10,7 @@ export const buttonBigPlay = {
 export const buttonSmallPlay = {
   image: '../../../assets/images/button-play-small.png',
 }
+
+export const buttonContact = {
+  title: 'Contact us',
+}

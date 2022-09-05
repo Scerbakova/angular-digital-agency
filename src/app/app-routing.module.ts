@@ -3,7 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutPageComponent } from './components/pages/about-page/about-page.component';
 import { HomePageComponent } from './components/pages/home-page/home-page.component';
 import { OurProjectPageComponent } from './components/pages/our-project-page/our-project-page.component';
+import { PrivacyPolicyPageComponent } from './components/pages/privacy-policy-page/privacy-policy-page.component';
 import { ServicePageComponent } from './components/pages/service-page/service-page.component';
+import { SupportPageComponent } from './components/pages/support-page/support-page.component';
+import { TermsAndConditionsPageComponent } from './components/pages/terms-and-conditions-page/terms-and-conditions-page.component';
 
 const routes: Routes = [
   {
@@ -30,6 +33,18 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomePageComponent
+  },
+  {
+    path: 'support',
+    component: SupportPageComponent
+  },
+  {
+    path: 'privacy-policy',
+    component: PrivacyPolicyPageComponent
+  },
+  {
+    path: 'terms-and-conditions',
+    component: TermsAndConditionsPageComponent
   },
   {
     path: '**',

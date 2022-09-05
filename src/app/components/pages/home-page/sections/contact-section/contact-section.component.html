@@ -1,0 +1,28 @@
+<section>
+  <div class="contact__wrapper">
+    <div class="contact">
+      <div class="title__wrapper" [ngSwitch]="screen">
+        <app-title
+          *ngSwitchCase="'mediumScreen'"
+          size="medium"
+          [label]="titleContact"
+        ></app-title>
+        <app-title
+          *ngSwitchCase="'smallScreen'"
+          size="extra-small"
+          [label]="titleContact"
+        ></app-title>
+        <app-title
+          *ngSwitchDefault
+          size="medium"
+          [label]="titleContact"
+        ></app-title>
+      </div>
+      <app-button
+        [round]="false"
+        [label]="buttonContactTitle"
+        [primary]="true"
+      ></app-button>
+    </div>
+  </div>
+</section>

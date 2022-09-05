@@ -7,6 +7,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
     (click)="onClick.emit($event)"
     [ngClass]="classes"
     [ngStyle]="{ 'backgroundColor': backgroundColor }"
+    [disabled]="disabled"
   >
     {{ label }}
     <ng-content></ng-content>
@@ -28,7 +29,10 @@ export class ButtonComponent {
   primary = false;
 
   @Input()
-  size: 'large' | 'small' | '' = '';
+  disabled = false;
+
+  @Input()
+  size: 'large' | 'small' | 'extra-small' | '' = '';
 
   @Output()
   onClick = new EventEmitter<Event>();
@@ -37,9 +41,9 @@ export class ButtonComponent {
 
     const shape = this.round ? 'button--round' : 'button--rectangle';
 
-    const mode = this.primary? 'button--primary' : 'button--secondary';
+    const mode = this.primary ? 'button--primary' : 'button--secondary';
 
-    return ['button', `button--${this.size}`, shape, mode];
+    return ['button', `button--${this.size}`, shape, mode]
   }
 
 }

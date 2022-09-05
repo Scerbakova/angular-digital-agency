@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 120px 100px;
+}
+
+@media screen and (max-width: 1110px) { 
+  .footer {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 140px 0px 50px 0px;
+  }
+  .logo {
+    align-self: center;
+    transform: translateX(-50px);
+  }
+}
