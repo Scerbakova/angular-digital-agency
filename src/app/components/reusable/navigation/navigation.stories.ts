@@ -9,7 +9,7 @@ import { LinkComponent } from './link/link.component';
 import { NavigationComponent } from './navigation.component';
 
 export default {
-  title: 'DigitalAgency/Organisms/Molecules/Navigation',
+  title: 'DigitalAgency/Molecules/Navigation',
   decorators: [
     moduleMetadata({
       declarations: [LinkComponent, NavigationComponent],

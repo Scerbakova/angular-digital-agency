@@ -48,7 +48,7 @@
       <app-button
         class="carousel-control__button"
         (click)="carouselMovesBackwards()"
-        [round]="true"
+        [round]="round"
         size="extra-small"
         [disabled]="leftButtonDisabled"
         ><img class="arrow" [src]="arrowLeft"
@@ -56,7 +56,7 @@
       <app-button
         class="carousel-control__button"
         (click)="carouselMovesForward()"
-        [round]="true"
+        [round]="round"
         size="extra-small"
         [disabled]="rightButtonDisabled"
         ><img class="arrow" [src]="arrowRight"

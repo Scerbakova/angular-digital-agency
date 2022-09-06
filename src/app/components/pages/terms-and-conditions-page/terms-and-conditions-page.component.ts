@@ -1,15 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-terms-and-conditions-page',
-  templateUrl: './terms-and-conditions-page.component.html',
-  styleUrls: ['./terms-and-conditions-page.component.scss']
+  template: `<app-header></app-header>`
 })
-export class TermsAndConditionsPageComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class TermsAndConditionsPageComponent{}

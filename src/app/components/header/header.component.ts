@@ -1,6 +1,6 @@
-import { Component, HostListener, Input, OnInit, Output } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import { buttonContact } from 'src/app/data/buttons';
-import { header, Navigation } from 'src/app/data/navigation';
+import { header } from 'src/app/data/navigation';
 
 @Component({
   selector: 'app-header',
@@ -50,7 +50,7 @@ export class HeaderComponent {
 
   showMenu = false;
 
-  innerWidth: number | undefined;
+  innerWidth!: number;
 
   buttonContactTitle = buttonContact.title;
 
@@ -60,7 +60,7 @@ export class HeaderComponent {
   onResize() {
     this.innerWidth = window.innerWidth;
 
-    if (this.innerWidth > 775) {
+    if (this.innerWidth > 830) {
       this.wideScreen = true;
       this.burger = false;
     } else {

@@ -12,27 +12,7 @@ import { Navigation } from 'src/app/data/navigation';
     ></app-link>
   </ul>
   `,
-  styles: [
-    `
-      .navigation__list {
-        display: flex;
-        column-gap: 40px;
-      }
-      .navigation__list--burger {
-        position: absolute;
-        top: 5%;
-        right: 5%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-      }
-      .navigation__list--column {
-        flex-direction: column;
-        align-items: center;
-        padding-inline-start: 0px;
-      }
-    `,
-  ],
+  styleUrls: ['./navigation.component.scss'],
 })
 export class NavigationComponent {
   @Input()

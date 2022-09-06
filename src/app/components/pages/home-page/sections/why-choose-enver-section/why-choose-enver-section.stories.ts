@@ -10,21 +10,24 @@ import { TitleComponent } from '../../../../reusable/title/title.component';
 import { WhyChooseEnverSectionComponent } from './why-choose-enver-section.component';
 
 export default {
-  title: 'DigitalAgency/Organisms/WhyChooseEnverSection',
+  title: 'DigitalAgency/Organisms',
   decorators: [
     moduleMetadata({
       declarations: [WhyChooseEnverSectionComponent, TextComponent, TitleComponent, ButtonComponent],
     }),
   ],
-  component: WhyChooseEnverSectionComponent
+  component: WhyChooseEnverSectionComponent,
+  argTypes: {
+    screen: { options: ['wideScreen', 'mediumScreen', 'smallScreen', 'default'], control: { type: 'radio' } },
+  },
 } as Meta;
 
 const Template: Story<WhyChooseEnverSectionComponent> = (args: WhyChooseEnverSectionComponent) => ({
   props: args,
 });
 
-export const Platform = Template.bind({});
-Platform.args = {
+export const WhyChooseEnver = Template.bind({});
+WhyChooseEnver.args = {
   textWhyChooseEnver: textWhyChooseEnver.text,
   buttonBigPlayImage: buttonBigPlay.image,
   buttonSmallPlayImage: buttonSmallPlay.image,

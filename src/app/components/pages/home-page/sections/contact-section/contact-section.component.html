@@ -1,5 +1,15 @@
 <section>
   <div class="contact__wrapper">
+    <img
+      class="picture add__picture"
+      src="../../../assets/images/add.png"
+      alt="add"
+    />
+    <img
+      class="picture circles__picture"
+      src="../../../assets/images/circles.png"
+      alt="circles"
+    />
     <div class="contact">
       <div class="title__wrapper" [ngSwitch]="screen">
         <app-title
@@ -19,9 +29,9 @@
         ></app-title>
       </div>
       <app-button
-        [round]="false"
+        [round]="round"
         [label]="buttonContactTitle"
-        [primary]="true"
+        [primary]="primary"
       ></app-button>
     </div>
   </div>

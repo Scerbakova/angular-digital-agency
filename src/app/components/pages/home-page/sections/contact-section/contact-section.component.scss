@@ -4,6 +4,7 @@
   min-height: 506px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .title__wrapper {
@@ -18,6 +19,20 @@
   margin: 0 120px;
 }
 
+.picture {
+  position: absolute;
+}
+
+.add__picture {
+  top: 13%;
+  right: 6%;
+}
+
+.circles__picture {
+  bottom: 13%;
+  left: 8%;
+}
+
 @media screen and (max-width: 1220px) {
   .contact {
     flex-direction: column;
@@ -26,10 +41,24 @@
   .title__wrapper {
     margin-bottom: 50px;
   }
+  .circles__picture {
+    bottom: 7%;
+    left: 8%;
+  }
 }
 
 @media screen and (max-width: 1110px) {
   .contact {
     margin: 0 40px;
+  }
+  .add__picture {
+    max-width: 28px;
+    top: 2%;
+    right: 2%;
+  }
+  .circles__picture {
+    max-width: 31px;
+    bottom: 2%;
+    left: 2%;
   }
 }

@@ -13,6 +13,8 @@ export class PlatformSectionComponent {
   textPlatform = textPlatform.text;
   buttonServicesTitle = buttonServices.title;
   buttonServicesImage = buttonServices.image;
+  round = false;
+  primary = true;
 
   @Input()
   screen!: string;

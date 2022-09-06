@@ -10,13 +10,16 @@ import { TitleComponent } from '../../../../reusable/title/title.component';
 import { PlatformSectionComponent } from './platform-section.component';
 
 export default {
-  title: 'DigitalAgency/Organisms/PlatformSection',
+  title: 'DigitalAgency/Organisms/Platform',
   decorators: [
     moduleMetadata({
       declarations: [PlatformSectionComponent, TextComponent, TitleComponent, ButtonComponent],
     }),
   ],
   component: PlatformSectionComponent,
+  argTypes: {
+    screen: { options: ['wideScreen', 'mediumScreen', 'smallScreen', 'default'], control: { type: 'radio' } },
+  },
 } as Meta;
 
 const Template: Story<PlatformSectionComponent> = (args: PlatformSectionComponent) => ({
@@ -28,5 +31,7 @@ Platform.args = {
   titlePlatform: titlePlatform.title,
   textPlatform:  textPlatform.text,
   buttonServicesTitle:  buttonServices.title,
-  buttonServicesImage:  buttonServices.image,
+  buttonServicesImage: buttonServices.image,
+  round: false,
+  primary: true
 };

@@ -4,7 +4,7 @@ import { Component, Input } from '@angular/core';
   selector: 'app-services-card',
   template: `
     <div class="card__wrapper">
-      <div class="card__content">
+      <div class="card__content" [routerLink]="'/services'">
         <app-service-image [serviceImage]="serviceImage"></app-service-image>
         <app-subtitle [subtitleLabel]="subtitleLabel"></app-subtitle>
         <div [ngSwitch]="screen">
@@ -31,13 +31,13 @@ import { Component, Input } from '@angular/core';
 })
 export class ServicesComponent {
   @Input()
-  subtitleLabel = '';
+  subtitleLabel!: string;
 
   @Input()
-  textLabel = '';
+  textLabel!: string;
 
   @Input()
-  serviceImage = '';
+  serviceImage!: string;
 
   @Input()
   screen!: string;

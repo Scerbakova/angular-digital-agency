@@ -1,0 +1,22 @@
+.navigation__list {
+  display: flex;
+  column-gap: 40px;
+}
+.navigation__list--burger {
+  position: absolute;
+  right: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.navigation__list--column {
+  flex-direction: column;
+  align-items: center;
+  padding-inline-start: 0px;
+}
+
+@media screen and (max-width: 487px) {
+  .navigation__list--burger {
+    flex-direction: column;
+  }
+}

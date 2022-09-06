@@ -10,6 +10,8 @@ import { titleContact } from 'src/app/data/titles';
 export class ContactSectionComponent {
   buttonContactTitle = buttonContact.title
   titleContact = titleContact.title;
+  round = false;
+  primary = true;
 
   @Input()
   screen!: string;

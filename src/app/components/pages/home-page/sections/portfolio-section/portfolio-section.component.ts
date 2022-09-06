@@ -1,4 +1,4 @@
-import { Component, HostListener, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {
   carouselPageImage,
   PortfolioPicture,
@@ -21,6 +21,7 @@ export class PortfolioSectionComponent {
   rightButtonDisabled = false;
   arrowLeft = '../../../assets/images/arrow-left.png';
   arrowRight = '../../../assets/images/arrow-right.png';
+  round = true;
 
   titlePortfolio = titlePortfolio.title;
 
@@ -66,6 +67,5 @@ export class PortfolioSectionComponent {
     this.assignPictureToPortfolioPicture(pictures);
 
     this.disableButtons();
-    console.log(this.leftButtonDisabled);
   }
 }
