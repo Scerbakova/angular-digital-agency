@@ -115,7 +115,7 @@
     "components": [
         {
             "name": "AboutPageComponent",
-            "id": "component-AboutPageComponent-60532d0e94f082d5da60d0e2d484903f82a6e8deba68dad136ad4cb8f833ebf16b1aadb192ed54c2c8570f135b5753bd8b6dce113a82317e6901d7f10c24b7a9",
+            "id": "component-AboutPageComponent-4c3f4ad3450ba7d5b96021cb9ac6b21cdf901cb1be9953275bd3bffc8f73d911d9e8ab27c85cfca7ba1c2a42165196e5367249467ff63acb6b1454b6b6e44ccf",
             "file": "src/app/components/pages/about-page/about-page.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -125,7 +125,7 @@
             "selector": "app-about-page",
             "styleUrls": [],
             "styles": [],
-            "template": "<app-header></app-header>",
+            "template": "<app-empty-page></app-empty-page>",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [],
@@ -139,14 +139,14 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-about-page',\n  template: `<app-header></app-header>`,\n})\nexport class AboutPageComponent {}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-about-page',\n  template: `<app-empty-page></app-empty-page>`,\n})\nexport class AboutPageComponent {}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": ""
         },
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-6946d409a7cb0eda6d97672680676af6cd0c507b12172d5eaca8adfe3f0f6abb3ff8552f2e45ccec045d04608359b1e660b6f92f265d93f746a951a793fe26c9",
+            "id": "component-AppComponent-8ee9829a774c8becda26ab9d794356ae714501a6736c40eefdc6180a18d1bb240bff1ef7d50e6731cd0ce2b9fee675530524d4bf4730f71058e8908edc0d3c4e",
             "file": "src/app/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -158,7 +158,7 @@
             "styles": [
                 "\n      .container {\n        overflow: hidden;\n        position: relative;\n      }\n    "
             ],
-            "template": "<div class=\"container\">    <router-outlet></router-outlet>\n  </div>",
+            "template": "<div class=\"container\">    <router-outlet>\n    </router-outlet>\n  </div>",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [],
@@ -172,7 +172,7 @@
                     "type": "string",
                     "optional": false,
                     "description": "",
-                    "line": 18
+                    "line": 19
                 }
             ],
             "methodsClass": [],
@@ -183,7 +183,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  template: `<div class=\"container\">\n    <router-outlet></router-outlet>\n  </div>`,\n  styles: [\n    `\n      .container {\n        overflow: hidden;\n        position: relative;\n      }\n    `,\n  ],\n})\nexport class AppComponent {\n  title = 'angular-digital-agency';\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  template: `<div class=\"container\">\n    <router-outlet>\n    </router-outlet>\n  </div>`,\n  styles: [\n    `\n      .container {\n        overflow: hidden;\n        position: relative;\n      }\n    `,\n  ],\n})\nexport class AppComponent {\n  title = 'angular-digital-agency';\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "\n      .container {\n        overflow: hidden;\n        position: relative;\n      }\n    \n"
@@ -283,7 +283,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".button {\n  font-size: 16px;\n  line-height: 22px;\n  text-align: center;\n  letter-spacing: -0.500211px;\n  color: #ffffff;\n  border-radius: 4px;\n  padding: 10px 40px;\n}\n\n.button:disabled {\n  background-color: rgb(70, 75, 83);\n  cursor: not-allowed;\n}\n\n.button--primary {\n  font-size: 20px;\n  border: 1px solid #5454D4;\n  background-color:  #5454D4;\n  display: flex;\n  align-items: center;\n}\n\n.button--secondary {\n  border: 1px solid #ffffff;\n  background-color: transparent;\n}\n\n.button--round {\n  border: 1px solid #5454D4;\n  background-color:  #5454D4;\n  border-radius: 50%;\n  padding: 0px;\n}\n\n.button--large {\n  width: 124px;\n  height: 124px;\n}\n\n.button--small {\n  width: 40px;\n  height: 40px;\n}\n\n.button--extra-small {\n  width: 38px;\n  height: 38px;\n  border: none;\n}\n\n@media screen and (max-width: 1011px) {\n  .button--primary {\n    padding: 10px 20px;\n  }\n}\n\n@media screen and (max-width: 775px) {\n  .button--primary {\n    padding: 10px 20px;\n  }\n}\n\n@media screen and (max-width: 375px) {\n  .button--primary {\n    margin-bottom: 50px;\n  }\n}\n",
+                    "data": ".button {\n  font-size: 16px;\n  line-height: 22px;\n  text-align: center;\n  letter-spacing: -0.500211px;\n  color: #ffffff;\n  border-radius: 4px;\n  padding: 10px 40px;\n  transition: .2s;\n}\n\n.button:hover {\n  box-shadow: inset 0px 2px 5px 1px #ffffff7e;\n}\n\n.button:active {\n  background-color: rgba(255, 255, 255, 0);\n}\n\n.button:disabled {\n  background-color: rgb(70, 75, 83);\n  cursor: not-allowed;\n}\n\n.button--primary {\n  font-size: 20px;\n  border: 1px solid #5454D4;\n  background-color:  #5454D4;\n  display: flex;\n  align-items: center;\n}\n\n.button--secondary {\n  border: 1px solid #ffffff;\n  background-color: transparent;\n}\n\n.button--secondary:active {\n  background-color: #5454d47a;\n}\n\n.button--round {\n  border: 1px solid #5454D4;\n  background-color:  #5454D4;\n  border-radius: 50%;\n  padding: 0px;\n}\n\n\n.button--large {\n  width: 124px;\n  height: 124px;\n}\n\n.button--small {\n  width: 40px;\n  height: 40px;\n}\n\n.button--extra-small {\n  width: 38px;\n  height: 38px;\n  border: none;\n}\n\n@media screen and (max-width: 1011px) {\n  .button--primary {\n    padding: 10px 20px;\n  }\n}\n\n@media screen and (max-width: 775px) {\n  .button--primary {\n    padding: 10px 20px;\n  }\n}\n\n@media screen and (max-width: 375px) {\n  .button--primary {\n    margin-bottom: 50px;\n  }\n}\n",
                     "styleUrl": "./button.component.scss"
                 }
             ],
@@ -383,7 +383,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".contact__wrapper {\n  background-color: #1e1e207c;\n  width: 100vw;\n  min-height: 506px;\n  display: flex;\n  align-items: center;\n  position: relative;\n}\n\n.title__wrapper {\n  max-width: 800px;\n}\n\n.contact {\n  display: flex;\n  align-items: center;\n  width: 100%;\n  justify-content: space-between;\n  margin: 0 120px;\n}\n\n.picture {\n  position: absolute;\n}\n\n.add__picture {\n  top: 13%;\n  right: 6%;\n}\n\n.circles__picture {\n  bottom: 13%;\n  left: 8%;\n}\n\n@media screen and (max-width: 1220px) {\n  .contact {\n    flex-direction: column;\n    align-items: flex-start;\n  }\n  .title__wrapper {\n    margin-bottom: 50px;\n  }\n  .circles__picture {\n    bottom: 7%;\n    left: 8%;\n  }\n}\n\n@media screen and (max-width: 1110px) {\n  .contact {\n    margin: 0 40px;\n  }\n  .add__picture {\n    max-width: 28px;\n    top: 2%;\n    right: 2%;\n  }\n  .circles__picture {\n    max-width: 31px;\n    bottom: 2%;\n    left: 2%;\n  }\n}\n",
+                    "data": ".contact__wrapper {\n  background-color: #1e1e207c;\n  width: 100vw;\n  min-height: 506px;\n  display: flex;\n  align-items: center;\n  position: relative;\n}\n\n.title__wrapper {\n  max-width: 800px;\n}\n\n.contact {\n  display: flex;\n  align-items: center;\n  width: 100%;\n  justify-content: space-between;\n  margin: 0 120px;\n}\n\n.picture {\n  position: absolute;\n}\n\n.add__picture {\n  top: 13%;\n  right: 6%;\n}\n\n.circles__picture {\n  bottom: 13%;\n  left: 8%;\n}\n\n@media screen and (max-width: 1220px) {\n  .contact {\n    flex-direction: column;\n    align-items: flex-start;\n  }\n  .title__wrapper {\n    margin-bottom: 50px;\n  }\n  .circles__picture {\n    bottom: 7%;\n    left: 8%;\n  }\n}\n\n@media screen and (max-width: 1020px) {\n  .contact {\n    margin: 0 40px;\n  }\n  .add__picture {\n    max-width: 28px;\n    top: 2%;\n    right: 2%;\n  }\n  .circles__picture {\n    max-width: 31px;\n    bottom: 2%;\n    left: 2%;\n  }\n}\n",
                     "styleUrl": "./contact-section.component.scss"
                 }
             ],
@@ -391,8 +391,41 @@
             "templateData": "<section>\n  <div class=\"contact__wrapper\">\n    <img\n      class=\"picture add__picture\"\n      src=\"../../../assets/images/add.png\"\n      alt=\"add\"\n    />\n    <img\n      class=\"picture circles__picture\"\n      src=\"../../../assets/images/circles.png\"\n      alt=\"circles\"\n    />\n    <div class=\"contact\">\n      <div class=\"title__wrapper\" [ngSwitch]=\"screen\">\n        <app-title\n          *ngSwitchCase=\"'mediumScreen'\"\n          size=\"medium\"\n          [label]=\"titleContact\"\n        ></app-title>\n        <app-title\n          *ngSwitchCase=\"'smallScreen'\"\n          size=\"extra-small\"\n          [label]=\"titleContact\"\n        ></app-title>\n        <app-title\n          *ngSwitchDefault\n          size=\"medium\"\n          [label]=\"titleContact\"\n        ></app-title>\n      </div>\n      <app-button\n        [round]=\"round\"\n        [label]=\"buttonContactTitle\"\n        [primary]=\"primary\"\n      ></app-button>\n    </div>\n  </div>\n</section>\n"
         },
         {
+            "name": "EmptyPageComponent",
+            "id": "component-EmptyPageComponent-5dca3c3523c1483cad1ea930898eb26a9f26e5fc7cdf566e59bd7e8bff8939326d213b7979a7263ff47edd75a6ed59be12c40740d008370c665a2a6fc4f0b75b",
+            "file": "src/app/components/reusable/empty-page/empty-page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-empty-page",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./empty-page.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-empty-page',\n  templateUrl: './empty-page.component.html',\n})\nexport class EmptyPageComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "templateData": "<div\n  style=\"\n    display: flex;\n    flex-direction: column;\n    text-align: center;\n    align-items: center;\n    margin-top: 50px;\n    row-gap: 50px;\n  \"\n  class=\"wrapper\"\n>\n  <app-button [routerLink]=\"'/home'\" [primary]=\"true\" [label]=\"'Back to home'\"></app-button>\n  <app-title\n    [label]=\"'This page is here just to show you that router works'\"\n  ></app-title>\n  <app-text\n    [textLabel]=\"'Please, press the button above, to return'\"\n  ></app-text>\n</div>\n"
+        },
+        {
             "name": "FooterComponent",
-            "id": "component-FooterComponent-0acb43791b61e58226a85edf9424e75c709e7040fbe7645acfce26c558e33506b6c40fd9936136747924cf6c684a0ac1e535a8ae6f29af420a87c839f1909bf3",
+            "id": "component-FooterComponent-c111b2e0617667c1f87e83033284e528cc28b08b46926e7e0cce9dd5cf93e687163b31721cc072eecfe0efbdf607b9f421e8e40c3c3671d80b2659da3b47ca57",
             "file": "src/app/components/footer/footer.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -404,7 +437,7 @@
                 "./footer.component.scss"
             ],
             "styles": [],
-            "template": "<footer class=\"footer\">    <app-logo class=\"logo\"></app-logo>\n    <app-navigation\n    *ngIf=\"wideScreen else smallScreen\"\n      [linksAndLabels]=\"linksAndLabels\"\n    ></app-navigation>\n    <ng-template #smallScreen>\n    <app-navigation\n      [column]=\"true\"\n      [linksAndLabels]=\"linksAndLabels\"\n    ></app-navigation>\n    </ng-template>\n    <app-text\n      textLabel=\"© 2020 Enver, All Rights Reserved\"\n      size=\"small\"\n    ></app-text>\n  </footer>",
+            "template": "<footer class=\"footer\">    <app-logo class=\"logo\"></app-logo>\n    <app-navigation\n    *ngIf=\"wideScreen else smallScreen\"\n      [linksAndLabels]=\"linksAndLabels\"\n    ></app-navigation>\n    <ng-template #smallScreen>\n    <app-navigation\n      [column]=\"true\"\n      [linksAndLabels]=\"linksAndLabels\"\n    ></app-navigation>\n    </ng-template>\n    <app-text\n      textLabel=\"© 2022 Enver, All Rights Reserved\"\n      size=\"small\"\n    ></app-text>\n  </footer>",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [
@@ -484,7 +517,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, HostListener, Input } from '@angular/core';\nimport { footer } from 'src/app/data/navigation';\n\n@Component({\n  selector: 'app-footer',\n  template: `<footer class=\"footer\">\n    <app-logo class=\"logo\"></app-logo>\n    <app-navigation\n    *ngIf=\"wideScreen else smallScreen\"\n      [linksAndLabels]=\"linksAndLabels\"\n    ></app-navigation>\n    <ng-template #smallScreen>\n    <app-navigation\n      [column]=\"true\"\n      [linksAndLabels]=\"linksAndLabels\"\n    ></app-navigation>\n    </ng-template>\n    <app-text\n      textLabel=\"© 2020 Enver, All Rights Reserved\"\n      size=\"small\"\n    ></app-text>\n  </footer>`,\n  styleUrls: ['./footer.component.scss'],\n})\nexport class FooterComponent {\n  linksAndLabels = footer;\n\n  @Input()\n  column = false;\n\n  wideScreen = true;\n\n  innerWidth: number | undefined;\n\n  @HostListener('window:resize')\n  onResize() {\n    this.innerWidth = window.innerWidth;\n\n    if (this.innerWidth > 1110) {\n      this.wideScreen = true;\n      this.column = false;\n    } else {\n      this.wideScreen = false;\n      this.column = true;\n    }\n  }\n}\n",
+            "sourceCode": "import { Component, HostListener, Input } from '@angular/core';\nimport { footer } from 'src/app/data/navigation';\n\n@Component({\n  selector: 'app-footer',\n  template: `<footer class=\"footer\">\n    <app-logo class=\"logo\"></app-logo>\n    <app-navigation\n    *ngIf=\"wideScreen else smallScreen\"\n      [linksAndLabels]=\"linksAndLabels\"\n    ></app-navigation>\n    <ng-template #smallScreen>\n    <app-navigation\n      [column]=\"true\"\n      [linksAndLabels]=\"linksAndLabels\"\n    ></app-navigation>\n    </ng-template>\n    <app-text\n      textLabel=\"© 2022 Enver, All Rights Reserved\"\n      size=\"small\"\n    ></app-text>\n  </footer>`,\n  styleUrls: ['./footer.component.scss'],\n})\nexport class FooterComponent {\n  linksAndLabels = footer;\n\n  @Input()\n  column = false;\n\n  wideScreen = true;\n\n  innerWidth: number | undefined;\n\n  @HostListener('window:resize')\n  onResize() {\n    this.innerWidth = window.innerWidth;\n\n    if (this.innerWidth > 1110) {\n      this.wideScreen = true;\n      this.column = false;\n    } else {\n      this.wideScreen = false;\n      this.column = true;\n    }\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -772,7 +805,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".carousel {\n  min-height: 417px;\n  display: flex;\n}\n\n.carousel__item {\n  min-height: max-content;\n  display: flex;\n}\n\n.carousel__item-upper {\n  align-self: flex-start;\n}\n\n.carousel__item-middle {\n  align-self: center;\n}\n\n.carousel__item-lower {\n  align-self: flex-end;\n}\n\n.carousel__image-wrapper {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-width: 384px;\n  min-height: 301px;\n  border-radius: 12px;\n  background-color: #1e1e20;\n}\n\n@media screen and (max-width: 475px) {\n  .carousel__image-wrapper {\n    min-width: 375px;\n    min-height: 294px;\n  }\n  .carousel__image-wrapper img {\n    max-width: 327px;\n    max-height: 246px;\n  }\n  .carousel {\n    min-height: 417px;\n    display: flex;\n  }\n}\n",
+                    "data": ".carousel {\n  min-height: 417px;\n  display: flex;\n}\n\n.carousel__item {\n  min-height: max-content;\n  display: flex;\n}\n\n.carousel__item-upper {\n  align-self: flex-start;\n}\n\n.carousel__item-middle {\n  align-self: center;\n}\n\n.carousel__item-lower {\n  align-self: flex-end;\n}\n\n.carousel__image-wrapper {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-width: 384px;\n  min-height: 301px;\n  border-radius: 12px;\n  background-color: #1e1e20;\n}\n\n@media screen and (max-width: 475px) {\n  .carousel__image-wrapper {\n    min-height: 294px;\n  }\n  .carousel__image-wrapper img {\n    max-width: 327px;\n    max-height: 246px;\n  }\n  .carousel {\n    min-height: 417px;\n    display: flex;\n  }\n}\n\n@media screen and (max-width: 375px) {\n  .carousel__image-wrapper {\n    min-width: 100vw;\n  }\n  .carousel__image-wrapper img {\n    max-width: 300px;\n  }\n}\n",
                     "styleUrl": "./image-card.component.scss"
                 }
             ],
@@ -957,7 +990,7 @@
         },
         {
             "name": "OurProjectPageComponent",
-            "id": "component-OurProjectPageComponent-957f977afeb9df432b26625ba8eebed44185929b982acc59c9520583ce8e02e020caa3dabb83e38f3700267d647f28a7286a231b4ae7320cb4714bcf9ff16356",
+            "id": "component-OurProjectPageComponent-5e28f7bc638af92568388955905786fd8012cca88f6b5c26df224cf0da6797893beb6aff4023ddc52a352c4134bbaa4f536f8f23085d55c47183f6ab07ca9cd2",
             "file": "src/app/components/pages/our-project-page/our-project-page.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -967,7 +1000,7 @@
             "selector": "app-our-project-page",
             "styleUrls": [],
             "styles": [],
-            "template": "<app-header></app-header>",
+            "template": "<app-empty-page></app-empty-page>",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [],
@@ -981,7 +1014,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-our-project-page',\n  template: `<app-header></app-header>`,\n})\nexport class OurProjectPageComponent {}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-our-project-page',\n  template: `<app-empty-page></app-empty-page>`,\n})\nexport class OurProjectPageComponent {}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": ""
@@ -1089,7 +1122,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".platform__wrapper {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  max-width: 100%;\n}\n\n.platform__text {\n  padding-right: 90px;\n}\n\n.title__wrapper {\n  margin-bottom: 24px;\n}\n\n.text__wrapper {\n  margin-bottom: 50px;\n}\n\n.button__arrow {\n  margin-left: 10px;\n}\n\n.picture__wrapper {\n  position: relative;\n}\n\n.human__picture {\n  margin-right: -80px;\n}\n\n.picture__rectangle {\n  position: absolute;\n  width: 375.34px;\n  height: 375.34px;\n  left: 110px;\n  top: 210px;\n  \n  border: 2px solid #FFFFFF;\n  border-radius: 22.179px;\n  transform: rotate(23.64deg);\n  z-index: -1;\n}\n\n.picture {\n  position: absolute;\n}\n\n.zigzag__picture {\n  left: -70px;\n  top: 120px;\n}\n\n.play__picture {\n  left: -110px;\n  top: 560px;\n}\n\n.add__picture {\n  left: 520px;\n  top: 610px;\n}\n\n.circles__picture {\n  left: 500px;\n  top: 80px;\n}\n\n@media screen and (max-width: 1195px) {\n  .human__picture {\n    max-width: 600px;\n  }\n  .picture__rectangle {\n    max-width: 370px;\n    max-height: 370px;\n    left: 100px;\n    top: 200px;\n  }\n  .add__picture {\n    left: 480px;\n    top: 610px;\n  }\n  .circles__picture {\n    left: 460px;\n    top: 80px;\n  }\n}\n\n@media screen and (max-width: 1145px) {\n  .human__picture {\n    max-width: 500px;\n  }\n  .picture__rectangle {\n    max-width: 290px;\n    max-height: 290px;\n    left: 85px;\n    top: 160px;\n  }\n  .add__picture {\n    left: 400px;\n    top: 450px;\n  }\n  .circles__picture {\n    left: 400px;\n    top: 80px;\n  }\n  .play__picture {\n    left: -110px;\n    top: 490px;\n  }\n}\n\n@media screen and (max-width: 1055px) {\n  .human__picture {\n    max-width: 400px;\n  }\n  .picture__rectangle {\n    max-width: 235px;\n    max-height: 235px;\n    left: 65px;\n    top: 125px;\n  }\n  .add__picture {\n    left: 290px;\n    top: 350px;\n  }\n  .circles__picture {\n    left: 290px;\n    top: 30px;\n  }\n  .play__picture {\n    left: -70px;\n    top: 370px;\n  }\n}\n\n@media screen and (max-width: 810px) {\n  .human__picture {\n    max-width: 380px;\n  }\n  .picture__rectangle {\n    max-width: 220px;\n    max-height: 220px;\n    left: 60px;\n    top: 120px;\n  }\n  .zigzag__picture {\n    left: 10px;\n    top: 50px;\n    max-width: 60px;\n  }\n  .add__picture {\n    left: 286px;\n    top: 350px;\n    max-width: 40px;\n  }\n  .circles__picture {\n    left: 265px;\n    top: 30px;\n    max-width: 40px;\n  }\n  .play__picture {\n    left: 20px;\n    top: 360px;\n    max-width: 60px;\n  }\n}\n\n@media screen and (max-width: 775px) {\n  .platform__wrapper {\n    flex-direction: column;\n    margin-top: 66px;\n  }\n  .platform__text {\n    padding: 0;\n  }\n}\n\n@media screen and (max-width: 600px) {\n  .platform__wrapper {\n    flex-direction: column;\n  }\n}\n\n@media screen and (max-width: 375px) {\n  .human__picture {\n    margin-left: -50px;\n  }\n  .picture__rectangle {\n    max-width: 220px;\n    max-height: 220px;\n    left: 10px;\n    top: 120px;\n  }\n  .zigzag__picture {\n    left: -30px;\n    top: 50px;\n    max-width: 60px;\n  }\n  .add__picture {\n    left: 240px;\n    top: 350px;\n    max-width: 40px;\n  }\n  .circles__picture {\n    left: 225px;\n    top: 30px;\n    max-width: 40px;\n  }\n  .play__picture {\n    left: -30px;\n    top: 360px;\n    max-width: 60px;\n  }\n}\n",
+                    "data": ".platform__wrapper {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  max-width: 100%;\n}\n\n.platform__text {\n  padding-right: 90px;\n}\n\n.title__wrapper {\n  margin-bottom: 24px;\n}\n\n.text__wrapper {\n  margin-bottom: 50px;\n}\n\n.button__arrow {\n  margin-left: 10px;\n}\n\n.picture__wrapper {\n  position: relative;\n}\n\n.human__picture {\n  margin-right: -80px;\n}\n\n.picture__rectangle {\n  position: absolute;\n  width: 375.34px;\n  height: 375.34px;\n  left: 110px;\n  top: 210px;\n  \n  border: 2px solid #FFFFFF;\n  border-radius: 22.179px;\n  transform: rotate(23.64deg);\n  z-index: -1;\n}\n\n.picture {\n  position: absolute;\n}\n\n.zigzag__picture {\n  left: -70px;\n  top: 120px;\n}\n\n.play__picture {\n  left: -110px;\n  top: 560px;\n}\n\n.add__picture {\n  left: 520px;\n  top: 610px;\n}\n\n.circles__picture {\n  left: 500px;\n  top: 80px;\n}\n\n@media screen and (max-width: 1195px) {\n  .human__picture {\n    max-width: 600px;\n  }\n  .picture__rectangle {\n    max-width: 370px;\n    max-height: 370px;\n    left: 100px;\n    top: 200px;\n  }\n  .add__picture {\n    left: 480px;\n    top: 610px;\n  }\n  .circles__picture {\n    left: 460px;\n    top: 80px;\n  }\n  .title__wrapper {\n    margin-top: 50px;\n  }\n}\n\n@media screen and (max-width: 1145px) {\n  .human__picture {\n    max-width: 500px;\n  }\n  .picture__rectangle {\n    max-width: 290px;\n    max-height: 290px;\n    left: 85px;\n    top: 160px;\n  }\n  .add__picture {\n    left: 400px;\n    top: 450px;\n  }\n  .circles__picture {\n    left: 400px;\n    top: 80px;\n  }\n  .play__picture {\n    left: -110px;\n    top: 490px;\n  }\n}\n\n@media screen and (max-width: 1055px) {\n  .human__picture {\n    max-width: 400px;\n  }\n  .picture__rectangle {\n    max-width: 235px;\n    max-height: 235px;\n    left: 65px;\n    top: 125px;\n  }\n  .add__picture {\n    left: 290px;\n    top: 350px;\n  }\n  .circles__picture {\n    left: 290px;\n    top: 30px;\n  }\n  .play__picture {\n    left: -70px;\n    top: 370px;\n  }\n}\n\n@media screen and (max-width: 810px) {\n  .human__picture {\n    max-width: 380px;\n  }\n  .picture__rectangle {\n    max-width: 220px;\n    max-height: 220px;\n    left: 60px;\n    top: 120px;\n  }\n  .zigzag__picture {\n    left: 10px;\n    top: 50px;\n    max-width: 60px;\n  }\n  .add__picture {\n    left: 286px;\n    top: 350px;\n    max-width: 40px;\n  }\n  .circles__picture {\n    left: 265px;\n    top: 30px;\n    max-width: 40px;\n  }\n  .play__picture {\n    left: 20px;\n    top: 360px;\n    max-width: 60px;\n  }\n}\n\n@media screen and (max-width: 775px) {\n  .platform__wrapper {\n    flex-direction: column;\n    margin-top: 66px;\n  }\n  .platform__text {\n    padding: 0;\n  }\n}\n\n@media screen and (max-width: 600px) {\n  .platform__wrapper {\n    flex-direction: column;\n  }\n}\n\n@media screen and (max-width: 375px) {\n  .human__picture {\n    margin-left: -50px;\n  }\n  .picture__rectangle {\n    max-width: 220px;\n    max-height: 220px;\n    left: 10px;\n    top: 120px;\n  }\n  .zigzag__picture {\n    left: -30px;\n    top: 50px;\n    max-width: 60px;\n  }\n  .add__picture {\n    left: 240px;\n    top: 350px;\n    max-width: 40px;\n  }\n  .circles__picture {\n    left: 225px;\n    top: 30px;\n    max-width: 40px;\n  }\n  .play__picture {\n    left: -30px;\n    top: 360px;\n    max-width: 60px;\n  }\n  .title__wrapper {\n    margin-top: 66px;\n  }\n}\n",
                     "styleUrl": "./platform-section.component.scss"
                 }
             ],
@@ -1287,7 +1320,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".portfolio__wrapper {\n  position: relative;\n}\n\n.title__wrapper {\n  margin-top: 150px;\n  position: relative;\n}\n\n.portfolio-carousel__wrapper {\n  display: flex;\n  column-gap: 26px;\n  margin-top: 70px;\n  justify-content: center;\n  width: 100%;\n}\n\n.carousel__buttons {\n  display: flex;\n  justify-content: center;\n  column-gap: 8px;\n  margin-top: 50px;\n  margin-bottom: 170px;\n  position: relative;\n}\n\n.carousel__buttons--round {\n  column-gap: 12px;\n}\n\n.circle {\n  background-color: #5454d4;\n  width: 38px;\n  height: 38px;\n  border-radius: 50%;\n  position: relative;\n  border: none;\n}\n\n.circle:disabled {\n  background-color: rgb(70, 75, 83);\n  cursor: not-allowed;\n}\n\n.carousel-control__button {\n  position: absolute;\n  z-index: 1;\n  position: relative;\n}\n\n.arrow {\n  pointer-events: none;\n  position: absolute;\n  top: 42%;\n  left: 42%;\n}\n\n.arrow-right {\n  transform: rotate(315deg);\n}\n\n.arrow-left {\n  left: 40%;\n  transform: rotate(135deg);\n}\n\n.picture {\n  position: absolute;\n}\n\n.circles__picture {\n  right: 3%;\n  transform: rotate(340deg);\n}\n\n.zigzag__picture {\n  bottom: -20px;\n  left: -40px\n}\n\n@media screen and (max-width: 1220px) {\n  .portfolio-carousel__wrapper {\n    align-self: center;\n    overflow: hidden;\n    justify-content: flex-start;\n    width: 800px;\n  }\n  .portfolio-carousel__container {\n    display: flex;\n    justify-content: center;\n  }\n  .carousel__buttons {\n    margin-top: 0px;\n  }\n}\n\n@media screen and (max-width: 1110px) {\n  .zigzag__picture {\n    bottom: 0px;\n    left: 0px\n  }\n}\n\n@media screen and (max-width: 880px) {\n  .portfolio-carousel__wrapper {\n    align-self: center;\n    overflow: hidden;\n    justify-content: flex-start;\n    width: 400px;\n  }\n  .portfolio-carousel__container {\n    display: flex;\n    justify-content: center;\n    position: relative;\n  }\n  .carousel__buttons {\n    margin-top: -50px;\n  }\n}\n\n@media screen and (max-width: 775px) {\n  .zigzag__picture {\n    max-width: 70px;\n    bottom: -70px;\n  }\n}\n\n@media screen and (max-width: 520px) {\n  .title__wrapper {\n    margin-top: 140px;\n  }\n}\n\n@media screen and (max-width: 495px) {\n  .circles__picture {\n    max-width: 50px;\n    top: 60%;\n    right: -10%;\n    transform: rotate(340deg);\n  }\n}\n\n@media screen and (max-width: 475px) {\n  .portfolio-carousel__wrapper {\n    justify-content: flex-start;\n    position: absolute;\n    margin-top: 0;\n    top: 70px;\n    left: 0px;\n  }\n  .portfolio-carousel__container {\n    margin-bottom: 470px;\n  }\n  .carousel__buttons {\n    margin-bottom: 140px;\n  }\n}\n\n@media screen and (max-width: 435px) {\n  .portfolio-carousel__wrapper {\n    left: -10px;\n  }\n}\n\n@media screen and (max-width: 410px) {\n  .portfolio-carousel__wrapper {\n    left: -30px;\n  }\n}\n\n@media screen and (max-width: 390px) {\n  .portfolio-carousel__wrapper {\n    left: -40px;\n  }\n}\n",
+                    "data": ".portfolio__wrapper {\n  position: relative;\n}\n\n.title__wrapper {\n  margin-top: 150px;\n  position: relative;\n}\n\n.portfolio-carousel__wrapper {\n  display: flex;\n  column-gap: 26px;\n  margin-top: 70px;\n  justify-content: center;\n  width: 100%;\n}\n\n.carousel__buttons {\n  display: flex;\n  justify-content: center;\n  column-gap: 8px;\n  margin-top: 50px;\n  margin-bottom: 170px;\n  position: relative;\n  cursor: pointer;\n}\n\n.carousel__buttons--round {\n  column-gap: 12px;\n}\n\n.circle {\n  background-color: #5454d4;\n  width: 38px;\n  height: 38px;\n  border-radius: 50%;\n  position: relative;\n  border: none;\n}\n\n.circle:disabled {\n  background-color: rgb(70, 75, 83);\n  cursor: not-allowed;\n}\n\n.carousel-control__button {\n  position: absolute;\n  z-index: 1;\n  position: relative;\n}\n\n.arrow {\n  pointer-events: none;\n  position: absolute;\n  top: 42%;\n  left: 42%;\n}\n\n.arrow-right {\n  transform: rotate(315deg);\n}\n\n.arrow-left {\n  left: 40%;\n  transform: rotate(135deg);\n}\n\n.picture {\n  position: absolute;\n}\n\n.circles__picture {\n  right: 3%;\n  transform: rotate(340deg);\n}\n\n.zigzag__picture {\n  bottom: -20px;\n  left: -40px\n}\n\n@media screen and (max-width: 1220px) {\n  .portfolio-carousel__wrapper {\n    align-self: center;\n    overflow: hidden;\n    justify-content: flex-start;\n    width: 800px;\n  }\n  .portfolio-carousel__container {\n    display: flex;\n    justify-content: center;\n  }\n  .carousel__buttons {\n    margin-top: 0px;\n  }\n}\n\n@media screen and (max-width: 1110px) {\n  .zigzag__picture {\n    bottom: 0px;\n    left: 0px\n  }\n}\n\n@media screen and (max-width: 880px) {\n  .portfolio-carousel__wrapper {\n    align-self: center;\n    overflow: hidden;\n    justify-content: flex-start;\n    width: 400px;\n  }\n  .portfolio-carousel__container {\n    display: flex;\n    justify-content: center;\n    position: relative;\n  }\n  .carousel__buttons {\n    margin-top: -50px;\n  }\n}\n\n@media screen and (max-width: 775px) {\n  .zigzag__picture {\n    max-width: 70px;\n    bottom: -70px;\n  }\n}\n\n@media screen and (max-width: 520px) {\n  .title__wrapper {\n    margin-top: 140px;\n  }\n}\n\n@media screen and (max-width: 495px) {\n  .circles__picture {\n    max-width: 50px;\n    top: 60%;\n    right: -10%;\n    transform: rotate(340deg);\n  }\n}\n\n@media screen and (max-width: 475px) {\n  .portfolio-carousel__wrapper {\n    justify-content: flex-start;\n    position: absolute;\n    margin-top: 0;\n    top: 70px;\n    left: 0px;\n  }\n  .portfolio-carousel__container {\n    margin-bottom: 470px;\n  }\n  .carousel__buttons {\n    margin-bottom: 140px;\n  }\n}\n\n@media screen and (max-width: 435px) {\n  .portfolio-carousel__wrapper {\n    left: -10px;\n  }\n}\n\n@media screen and (max-width: 410px) {\n  .portfolio-carousel__wrapper {\n    left: -30px;\n  }\n}\n\n@media screen and (max-width: 390px) {\n  .portfolio-carousel__wrapper {\n    left: -40px;\n  }\n}\n",
                     "styleUrl": "./portfolio-section.component.scss"
                 }
             ],
@@ -1296,7 +1329,7 @@
         },
         {
             "name": "PrivacyPolicyPageComponent",
-            "id": "component-PrivacyPolicyPageComponent-167effa3a8ca209bbeae7388d821e2e729680716888abab1c49b8681dcc66221b8cad79bdf2f16b2b2836dc654983ce2496b954f56ef31123a4e2ccbdb783eb3",
+            "id": "component-PrivacyPolicyPageComponent-cf946dde9d96747027a1c0dacf231de2344065f6fa8a9461a6e1c088dd63e04ebf50581ccd480f2d5257cea43dfee85856dae4949fff4caaa8746259d74ba7bb",
             "file": "src/app/components/pages/privacy-policy-page/privacy-policy-page.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1306,7 +1339,7 @@
             "selector": "app-privacy-policy-page",
             "styleUrls": [],
             "styles": [],
-            "template": "<app-header></app-header>",
+            "template": "<app-empty-page></app-empty-page>",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [],
@@ -1320,14 +1353,14 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-privacy-policy-page',\n  template: `<app-header></app-header>`\n})\nexport class PrivacyPolicyPageComponent {}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-privacy-policy-page',\n  template: `<app-empty-page></app-empty-page>`,\n})\nexport class PrivacyPolicyPageComponent {}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": ""
         },
         {
             "name": "ServiceImageComponent",
-            "id": "component-ServiceImageComponent-26fbcd883fd680adb503232f228561107c6287c080c404cf9ad32c3c53654f12e992f8fe12e054f00b6f6b9bb2f529fc58ccad598213ecbbe9521e4c35eee959",
+            "id": "component-ServiceImageComponent-7536c0b884c842fe27ac6a478744e513cf8817c522a2ef36dbabe2e53c2d9a8a5d337416433c4b310b354b35d0aae8bb1b5603aeffd7e09df580a0f9f17f3bf3",
             "file": "src/app/components/pages/home-page/sections/services-section/service-image/service-image.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1336,7 +1369,9 @@
             "providers": [],
             "selector": "app-service-image",
             "styleUrls": [],
-            "styles": [],
+            "styles": [
+                "\n  img {\n    transition: .4s;\n  }\n  img:hover {\n    scale: 1.2\n  }"
+            ],
             "template": "<img [src]=\"serviceImage\" alt=\"service\">",
             "templateUrl": [],
             "viewProviders": [],
@@ -1346,7 +1381,7 @@
                     "defaultValue": "''",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 11,
+                    "line": 17,
                     "type": "string",
                     "decorators": []
                 }
@@ -1361,14 +1396,14 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-service-image',\n  template: `<img [src]=\"serviceImage\" alt=\"service\">`,\n  styleUrls: []\n})\nexport class ServiceImageComponent {\n\n  @Input()\n  serviceImage = '';\n}\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-service-image',\n  template: `<img [src]=\"serviceImage\" alt=\"service\">`,\n  styles: [`\n  img {\n    transition: .4s;\n  }\n  img:hover {\n    scale: 1.2\n  }`]\n})\nexport class ServiceImageComponent {\n\n  @Input()\n  serviceImage = '';\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
-            "stylesData": ""
+            "stylesData": "\n  img {\n    transition: .4s;\n  }\n  img:hover {\n    scale: 1.2\n  }\n"
         },
         {
             "name": "ServicePageComponent",
-            "id": "component-ServicePageComponent-f98dc806f9554195afc3999b7d439a98e5f42646d816da465f467e3546736571e204cd498f8fd2d117118100eb746891b4ec96ee72184a60d0ce3a12ecae35ff",
+            "id": "component-ServicePageComponent-2378dcecd125dd1d3e490ebcec880a462e58815c39ba1f9ef3931090ac65be2e0631583de6ce7425ed1d1cce4ac990f645d74f7791bedd1b04ba2db33aa90d65",
             "file": "src/app/components/pages/service-page/service-page.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1378,7 +1413,7 @@
             "selector": "app-service-page",
             "styleUrls": [],
             "styles": [],
-            "template": "<app-header></app-header>",
+            "template": "<app-empty-page></app-empty-page>",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [],
@@ -1392,7 +1427,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-service-page',\n  template: `<app-header></app-header>`,\n})\nexport class ServicePageComponent {}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-service-page',\n  template: `<app-empty-page></app-empty-page>`,\n})\nexport class ServicePageComponent {}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": ""
@@ -1462,7 +1497,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".card__wrapper {\n  display: flex;\n  min-width: 384px;\n  justify-content: center;\n  margin: 50px 0;\n}\n.card__content {\n  display: flex;\n  flex-direction: column;\n  row-gap: 20px;\n  max-width: 300px;\n  text-align: center;\n}\n\n@media screen and (max-width: 871px) {\n  .card__wrapper {\n    min-width: auto;\n  }\n}\n",
+                    "data": ".card__wrapper {\n  display: flex;\n  min-width: 384px;\n  justify-content: center;\n  margin: 50px 0;\n}\n.card__content {\n  display: flex;\n  flex-direction: column;\n  row-gap: 20px;\n  max-width: 300px;\n  text-align: center;\n  cursor: pointer;\n}\n\n@media screen and (max-width: 871px) {\n  .card__wrapper {\n    min-width: auto;\n  }\n}\n",
                     "styleUrl": "./services-card.component.scss"
                 }
             ],
@@ -1603,7 +1638,7 @@
         },
         {
             "name": "SupportPageComponent",
-            "id": "component-SupportPageComponent-ca736c44ba8b603ed4e52a0cad95f90a2a6589c0da7916569d29256fca44b9987e4fc133534f1b7cf20a7a81cf8006907f9fcce05f4a033448b6b08a1fc37c31",
+            "id": "component-SupportPageComponent-134f27d6ecd5b78cb4008699e5eff5142805ba609c07b444caae3ccfbb3ff28fc9220970725d80ee7ba83ff3937b7d1a540288b38ad1536c7266061a515e54c1",
             "file": "src/app/components/pages/support-page/support-page.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1613,7 +1648,7 @@
             "selector": "app-support-page",
             "styleUrls": [],
             "styles": [],
-            "template": "<app-header></app-header>",
+            "template": "<app-empty-page></app-empty-page>",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [],
@@ -1627,14 +1662,14 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-support-page',\n  template: `<app-header></app-header>`\n})\nexport class SupportPageComponent {}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-support-page',\n  template: `<app-empty-page></app-empty-page>`,\n})\nexport class SupportPageComponent {}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": ""
         },
         {
             "name": "TermsAndConditionsPageComponent",
-            "id": "component-TermsAndConditionsPageComponent-1cc962ea2ab4dac4faff26b7e493f4708952ccb4d153744d57418c0109fa77cb9953d94e61b587e88f1ea16d9216dda8dac8e57c211ed62c0af5fb1c08fea57e",
+            "id": "component-TermsAndConditionsPageComponent-a8962d46f8c86239f61afd27a813066266efec083715c9339c1f31ee3eae4f768cb11ac3309116e06449b8291982d4401e1b60f314f916dd3892ad94d3838e7b",
             "file": "src/app/components/pages/terms-and-conditions-page/terms-and-conditions-page.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1644,7 +1679,7 @@
             "selector": "app-terms-and-conditions-page",
             "styleUrls": [],
             "styles": [],
-            "template": "<app-header></app-header>",
+            "template": "<app-empty-page></app-empty-page>",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [],
@@ -1658,7 +1693,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-terms-and-conditions-page',\n  template: `<app-header></app-header>`\n})\nexport class TermsAndConditionsPageComponent{}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-terms-and-conditions-page',\n  template: `<app-empty-page></app-empty-page>`,\n})\nexport class TermsAndConditionsPageComponent{}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": ""
@@ -1925,13 +1960,13 @@
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-2cab77f70453b580fc9da8f3163d8e8f3bd622af1dca7c3a3335c2c8c0fab8c556151e13f226b026798a2820193d05eba4a8aebe7cb68d7c41262952e6ae82e8",
+            "id": "module-AppModule-234d883ec8f14efb245a468329ab1c8f7abfddbbdbaef51aef257bd8c4895683bb81d3f1f5f37ff69deb3225f643f24c42ac9d3eed907911c8a9c5aa183b9921",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { ButtonComponent } from './components/reusable/button/button.component';\nimport { LinkComponent } from './components/reusable/navigation/link/link.component';\nimport { NavigationComponent } from './components/reusable/navigation/navigation.component';\nimport { LogoComponent } from './components/reusable/logo/logo.component';\nimport { TitleComponent } from './components/reusable/title/title.component';\nimport { TextComponent } from './components/reusable/text/text.component';\nimport { HeaderComponent } from './components/header/header.component';\nimport { PlatformSectionComponent } from './components/pages/home-page/sections/platform-section/platform-section.component';\nimport { WhyChooseEnverSectionComponent } from './components/pages/home-page/sections/why-choose-enver-section/why-choose-enver-section.component';\nimport { FontAwesomeModule } from '@fortawesome/angular-fontawesome';\nimport { HomePageComponent } from './components/pages/home-page/home-page.component';\nimport { ServicePageComponent } from './components/pages/service-page/service-page.component';\nimport { OurProjectPageComponent } from './components/pages/our-project-page/our-project-page.component';\nimport { AboutPageComponent } from './components/pages/about-page/about-page.component';\nimport { ServicesSectionComponent } from './components/pages/home-page/sections/services-section/services-section.component';\nimport { ServicesComponent } from './components/pages/home-page/sections/services-section/services-card/services-card.component';\nimport { SubtitleComponent } from './components/reusable/subtitle/subtitle.component';\nimport { ServiceImageComponent } from './components/pages/home-page/sections/services-section/service-image/service-image.component';\nimport { PortfolioSectionComponent } from './components/pages/home-page/sections/portfolio-section/portfolio-section.component';\nimport { ImageCardComponent } from './components/pages/home-page/sections/portfolio-section/image-card/image-card.component';\nimport { ContactSectionComponent } from './components/pages/home-page/sections/contact-section/contact-section.component';\nimport { FooterComponent } from './components/footer/footer.component';\nimport { SupportPageComponent } from './components/pages/support-page/support-page.component';\nimport { PrivacyPolicyPageComponent } from './components/pages/privacy-policy-page/privacy-policy-page.component';\nimport { TermsAndConditionsPageComponent } from './components/pages/terms-and-conditions-page/terms-and-conditions-page.component';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    ButtonComponent,\n    LinkComponent,\n    NavigationComponent,\n    LogoComponent,\n    TitleComponent,\n    TextComponent,\n    HeaderComponent,\n    PlatformSectionComponent,\n    WhyChooseEnverSectionComponent,\n    HomePageComponent,\n    ServicePageComponent,\n    OurProjectPageComponent,\n    AboutPageComponent,\n    ServicesSectionComponent,\n    ServicesComponent,\n    SubtitleComponent,\n    ServiceImageComponent,\n    PortfolioSectionComponent,\n    ImageCardComponent,\n    ContactSectionComponent,\n    FooterComponent,\n    SupportPageComponent,\n    PrivacyPolicyPageComponent,\n    TermsAndConditionsPageComponent,\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    FontAwesomeModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { ButtonComponent } from './components/reusable/button/button.component';\nimport { LinkComponent } from './components/reusable/navigation/link/link.component';\nimport { NavigationComponent } from './components/reusable/navigation/navigation.component';\nimport { LogoComponent } from './components/reusable/logo/logo.component';\nimport { TitleComponent } from './components/reusable/title/title.component';\nimport { TextComponent } from './components/reusable/text/text.component';\nimport { HeaderComponent } from './components/header/header.component';\nimport { PlatformSectionComponent } from './components/pages/home-page/sections/platform-section/platform-section.component';\nimport { WhyChooseEnverSectionComponent } from './components/pages/home-page/sections/why-choose-enver-section/why-choose-enver-section.component';\nimport { FontAwesomeModule } from '@fortawesome/angular-fontawesome';\nimport { HomePageComponent } from './components/pages/home-page/home-page.component';\nimport { ServicePageComponent } from './components/pages/service-page/service-page.component';\nimport { OurProjectPageComponent } from './components/pages/our-project-page/our-project-page.component';\nimport { AboutPageComponent } from './components/pages/about-page/about-page.component';\nimport { ServicesSectionComponent } from './components/pages/home-page/sections/services-section/services-section.component';\nimport { ServicesComponent } from './components/pages/home-page/sections/services-section/services-card/services-card.component';\nimport { SubtitleComponent } from './components/reusable/subtitle/subtitle.component';\nimport { ServiceImageComponent } from './components/pages/home-page/sections/services-section/service-image/service-image.component';\nimport { PortfolioSectionComponent } from './components/pages/home-page/sections/portfolio-section/portfolio-section.component';\nimport { ImageCardComponent } from './components/pages/home-page/sections/portfolio-section/image-card/image-card.component';\nimport { ContactSectionComponent } from './components/pages/home-page/sections/contact-section/contact-section.component';\nimport { FooterComponent } from './components/footer/footer.component';\nimport { SupportPageComponent } from './components/pages/support-page/support-page.component';\nimport { PrivacyPolicyPageComponent } from './components/pages/privacy-policy-page/privacy-policy-page.component';\nimport { TermsAndConditionsPageComponent } from './components/pages/terms-and-conditions-page/terms-and-conditions-page.component';\nimport { EmptyPageComponent } from './components/reusable/empty-page/empty-page.component';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    ButtonComponent,\n    LinkComponent,\n    NavigationComponent,\n    LogoComponent,\n    TitleComponent,\n    TextComponent,\n    HeaderComponent,\n    PlatformSectionComponent,\n    WhyChooseEnverSectionComponent,\n    HomePageComponent,\n    ServicePageComponent,\n    OurProjectPageComponent,\n    AboutPageComponent,\n    ServicesSectionComponent,\n    ServicesComponent,\n    SubtitleComponent,\n    ServiceImageComponent,\n    PortfolioSectionComponent,\n    ImageCardComponent,\n    ContactSectionComponent,\n    FooterComponent,\n    SupportPageComponent,\n    PrivacyPolicyPageComponent,\n    TermsAndConditionsPageComponent,\n    EmptyPageComponent,\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    FontAwesomeModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -1951,6 +1986,9 @@
                         },
                         {
                             "name": "ContactSectionComponent"
+                        },
+                        {
+                            "name": "EmptyPageComponent"
                         },
                         {
                             "name": "FooterComponent"
@@ -2505,31 +2543,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/reusable/button/button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ButtonComponent>",
-                "defaultValue": "(args: ButtonComponent) => ({\n  component: ButtonComponent,\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/components/reusable/logo/logo.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<LogoComponent>",
                 "defaultValue": "(args: LogoComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/reusable/navigation/navigation.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<NavigationComponent>",
-                "defaultValue": "(args: NavigationComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -2545,11 +2563,31 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/components/reusable/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\n  component: ButtonComponent,\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/components/reusable/text/text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<TextComponent>",
                 "defaultValue": "(args: TextComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/reusable/navigation/navigation.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<NavigationComponent>",
+                "defaultValue": "(args: NavigationComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -2595,16 +2633,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/pages/home-page/sections/services-section/services-section.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ServicesSectionComponent>",
-                "defaultValue": "(args: ServicesSectionComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/components/pages/home-page/sections/portfolio-section/portfolio-section.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2615,11 +2643,31 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/components/pages/home-page/sections/services-section/services-section.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ServicesSectionComponent>",
+                "defaultValue": "(args: ServicesSectionComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/components/pages/home-page/sections/why-choose-enver-section/why-choose-enver-section.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<WhyChooseEnverSectionComponent>",
                 "defaultValue": "(args: WhyChooseEnverSectionComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/pages/home-page/sections/portfolio-section/image-card/image-card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ImageCardComponent>",
+                "defaultValue": "(args: ImageCardComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -2640,16 +2688,6 @@
                 "deprecationMessage": "",
                 "type": "Story<ServicesComponent>",
                 "defaultValue": "(args: ServicesComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/pages/home-page/sections/portfolio-section/image-card/image-card.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ImageCardComponent>",
-                "defaultValue": "(args: ImageCardComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "textPlatform",
@@ -3932,6 +3970,15 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/reusable/empty-page/empty-page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "EmptyPageComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
