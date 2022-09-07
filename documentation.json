@@ -115,7 +115,7 @@
     "components": [
         {
             "name": "AboutPageComponent",
-            "id": "component-AboutPageComponent-a3d7d13c6582a07ae69c658fa0dc73abebbe012626098989f8a2a5d84fdecacf3b146fc8af1c51953e26285f5b32577a1ec010f057fe7d4a20e0601ef1324a7d",
+            "id": "component-AboutPageComponent-60532d0e94f082d5da60d0e2d484903f82a6e8deba68dad136ad4cb8f833ebf16b1aadb192ed54c2c8570f135b5753bd8b6dce113a82317e6901d7f10c24b7a9",
             "file": "src/app/components/pages/about-page/about-page.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -131,18 +131,7 @@
             "inputsClass": [],
             "outputsClass": [],
             "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 11,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
+            "methodsClass": [],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -150,21 +139,10 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-about-page',\n  template: `<app-header></app-header>`,\n})\nexport class AboutPageComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-about-page',\n  template: `<app-header></app-header>`,\n})\nexport class AboutPageComponent {}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
-            "stylesData": "",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "args": [],
-                "line": 7
-            },
-            "implements": [
-                "OnInit"
-            ]
+            "stylesData": ""
         },
         {
             "name": "AppComponent",
@@ -324,7 +302,7 @@
         },
         {
             "name": "ContactSectionComponent",
-            "id": "component-ContactSectionComponent-1740cec2db05c58a9d287f7a269d32a7dfd86bf65cc64a4b4a8d7483b3cd2dc40501c4b0053e1785e24daea7a3a9ba4bbaa1b42a91c7ba5318c45a3de40105bc",
+            "id": "component-ContactSectionComponent-bf90decc6c0ba01cc5165c0252b9accc74f8f57b59447e11f87495e730f8a1860c0f661a6378e89307995d17917113991ea758faba2778464e829c4b2e886c6e",
             "file": "src/app/components/pages/home-page/sections/contact-section/contact-section.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -345,7 +323,7 @@
                     "name": "screen",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 15,
+                    "line": 17,
                     "type": "string",
                     "decorators": []
                 }
@@ -361,6 +339,26 @@
                     "optional": false,
                     "description": "",
                     "line": 11
+                },
+                {
+                    "name": "primary",
+                    "defaultValue": "true",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "round",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
                 },
                 {
                     "name": "titleContact",
@@ -381,7 +379,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { buttonContact } from 'src/app/data/buttons';\nimport { titleContact } from 'src/app/data/titles';\n\n@Component({\n  selector: 'app-contact-section',\n  templateUrl: './contact-section.component.html',\n  styleUrls: ['./contact-section.component.scss']\n})\nexport class ContactSectionComponent {\n  buttonContactTitle = buttonContact.title\n  titleContact = titleContact.title;\n\n  @Input()\n  screen!: string;\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { buttonContact } from 'src/app/data/buttons';\nimport { titleContact } from 'src/app/data/titles';\n\n@Component({\n  selector: 'app-contact-section',\n  templateUrl: './contact-section.component.html',\n  styleUrls: ['./contact-section.component.scss']\n})\nexport class ContactSectionComponent {\n  buttonContactTitle = buttonContact.title\n  titleContact = titleContact.title;\n  round = false;\n  primary = true;\n\n  @Input()\n  screen!: string;\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -390,7 +388,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<section>\n  <div class=\"contact__wrapper\">\n    <img\n      class=\"picture add__picture\"\n      src=\"../../../assets/images/add.png\"\n      alt=\"add\"\n    />\n    <img\n      class=\"picture circles__picture\"\n      src=\"../../../assets/images/circles.png\"\n      alt=\"circles\"\n    />\n    <div class=\"contact\">\n      <div class=\"title__wrapper\" [ngSwitch]=\"screen\">\n        <app-title\n          *ngSwitchCase=\"'mediumScreen'\"\n          size=\"medium\"\n          [label]=\"titleContact\"\n        ></app-title>\n        <app-title\n          *ngSwitchCase=\"'smallScreen'\"\n          size=\"extra-small\"\n          [label]=\"titleContact\"\n        ></app-title>\n        <app-title\n          *ngSwitchDefault\n          size=\"medium\"\n          [label]=\"titleContact\"\n        ></app-title>\n      </div>\n      <app-button\n        [round]=\"false\"\n        [label]=\"buttonContactTitle\"\n        [primary]=\"true\"\n      ></app-button>\n    </div>\n  </div>\n</section>\n"
+            "templateData": "<section>\n  <div class=\"contact__wrapper\">\n    <img\n      class=\"picture add__picture\"\n      src=\"../../../assets/images/add.png\"\n      alt=\"add\"\n    />\n    <img\n      class=\"picture circles__picture\"\n      src=\"../../../assets/images/circles.png\"\n      alt=\"circles\"\n    />\n    <div class=\"contact\">\n      <div class=\"title__wrapper\" [ngSwitch]=\"screen\">\n        <app-title\n          *ngSwitchCase=\"'mediumScreen'\"\n          size=\"medium\"\n          [label]=\"titleContact\"\n        ></app-title>\n        <app-title\n          *ngSwitchCase=\"'smallScreen'\"\n          size=\"extra-small\"\n          [label]=\"titleContact\"\n        ></app-title>\n        <app-title\n          *ngSwitchDefault\n          size=\"medium\"\n          [label]=\"titleContact\"\n        ></app-title>\n      </div>\n      <app-button\n        [round]=\"round\"\n        [label]=\"buttonContactTitle\"\n        [primary]=\"primary\"\n      ></app-button>\n    </div>\n  </div>\n</section>\n"
         },
         {
             "name": "FooterComponent",
@@ -959,7 +957,7 @@
         },
         {
             "name": "OurProjectPageComponent",
-            "id": "component-OurProjectPageComponent-e908d400fa0a057579286b328aec433f800616dd86ecad37f008360afcb1f3cca872052f121f5af016dbe02a6ff93d7953dc1f16aee70cd84e1adbb18f71beaf",
+            "id": "component-OurProjectPageComponent-957f977afeb9df432b26625ba8eebed44185929b982acc59c9520583ce8e02e020caa3dabb83e38f3700267d647f28a7286a231b4ae7320cb4714bcf9ff16356",
             "file": "src/app/components/pages/our-project-page/our-project-page.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -975,18 +973,7 @@
             "inputsClass": [],
             "outputsClass": [],
             "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 11,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
+            "methodsClass": [],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -994,25 +981,14 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-our-project-page',\n  template: `<app-header></app-header>`,\n})\nexport class OurProjectPageComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-our-project-page',\n  template: `<app-header></app-header>`,\n})\nexport class OurProjectPageComponent {}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
-            "stylesData": "",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "args": [],
-                "line": 7
-            },
-            "implements": [
-                "OnInit"
-            ]
+            "stylesData": ""
         },
         {
             "name": "PlatformSectionComponent",
-            "id": "component-PlatformSectionComponent-3a7e522abfe8e711fa1402ce1b58175215af24bbed84209e350177ab22630609a1fa8431dc7adba11a66b11557ecad0d6940d50768bcee2ed3d8192397f18e78",
+            "id": "component-PlatformSectionComponent-cef0d7818e605cf82a142be64aad1adf73889ffccfeb3ea0498f1034a6952486d0ce21ad407dd8c3412acf10c24cfcc2a29bef38793d2b89d688eeb35230b551",
             "file": "src/app/components/pages/home-page/sections/platform-section/platform-section.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1062,6 +1038,7 @@
                 },
                 {
                     "name": "primary",
+                    "defaultValue": "true",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -1071,6 +1048,7 @@
                 },
                 {
                     "name": "round",
+                    "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -1107,7 +1085,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { buttonServices } from 'src/app/data/buttons';\nimport { textPlatform } from 'src/app/data/texts';\nimport { titlePlatform } from 'src/app/data/titles';\n\n@Component({\n  selector: 'app-platform-section',\n  templateUrl: './platform-section.component.html',\n  styleUrls: ['./platform-section.component.scss'],\n})\nexport class PlatformSectionComponent {\n  titlePlatform = titlePlatform.title;\n  textPlatform = textPlatform.text;\n  buttonServicesTitle = buttonServices.title;\n  buttonServicesImage = buttonServices.image;\n  round!: false;\n  primary!: true;\n\n  @Input()\n  screen!: string;\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { buttonServices } from 'src/app/data/buttons';\nimport { textPlatform } from 'src/app/data/texts';\nimport { titlePlatform } from 'src/app/data/titles';\n\n@Component({\n  selector: 'app-platform-section',\n  templateUrl: './platform-section.component.html',\n  styleUrls: ['./platform-section.component.scss'],\n})\nexport class PlatformSectionComponent {\n  titlePlatform = titlePlatform.title;\n  textPlatform = textPlatform.text;\n  buttonServicesTitle = buttonServices.title;\n  buttonServicesImage = buttonServices.image;\n  round = false;\n  primary = true;\n\n  @Input()\n  screen!: string;\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -1120,7 +1098,7 @@
         },
         {
             "name": "PortfolioSectionComponent",
-            "id": "component-PortfolioSectionComponent-c00173b313e73f2f006f02265e8f756391db83331c160688d77c73e2a8104189542fa67de78ba77fe926b0cc5a264f1901de54a99b2b67213605e8850282f44d",
+            "id": "component-PortfolioSectionComponent-421adbcd27180168616a41e580e390fd089de183deceae84a42ce9e8d0453f02196afe538155e359d32440149213f464614cf887abf2475411bc89f6bb40bda6",
             "file": "src/app/components/pages/home-page/sections/portfolio-section/portfolio-section.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1218,6 +1196,16 @@
                     "line": 21
                 },
                 {
+                    "name": "round",
+                    "defaultValue": "true",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 24
+                },
+                {
                     "name": "titlePortfolio",
                     "defaultValue": "titlePortfolio.title",
                     "deprecated": false,
@@ -1225,7 +1213,7 @@
                     "type": "",
                     "optional": false,
                     "description": "",
-                    "line": 25
+                    "line": 26
                 }
             ],
             "methodsClass": [
@@ -1242,7 +1230,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 40,
+                    "line": 41,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -1263,7 +1251,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 61,
+                    "line": 62,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -1273,7 +1261,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 48,
+                    "line": 49,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -1283,7 +1271,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 27,
+                    "line": 28,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -1295,7 +1283,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\nimport {\n  carouselPageImage,\n  PortfolioPicture,\n  PortfolioPictures,\n} from 'src/app/data/pictures';\nimport { titlePortfolio } from 'src/app/data/titles';\n\n@Component({\n  selector: 'app-portfolio-section',\n  templateUrl: './portfolio-section.component.html',\n  styleUrls: ['./portfolio-section.component.scss'],\n})\nexport class PortfolioSectionComponent {\n  @Input()\n  screen!: string;\n  portfolioPictures = PortfolioPictures;\n  buttons = carouselPageImage;\n  activePortfolioPicture!: PortfolioPicture;\n  leftButtonDisabled = true;\n  rightButtonDisabled = false;\n  arrowLeft = '../../../assets/images/arrow-left.png';\n  arrowRight = '../../../assets/images/arrow-right.png';\n\n  titlePortfolio = titlePortfolio.title;\n\n  disableButtons() {\n    if (this.screen === 'smallScreen') {\n      this.activePortfolioPicture.picture ===\n        '../../../assets/images/carousel_image_1.png'\n        ? (this.leftButtonDisabled = true)\n        : (this.leftButtonDisabled = false);\n      this.activePortfolioPicture.picture ===\n      '../../../assets/images/carousel_image_2.png'\n        ? (this.rightButtonDisabled = true)\n        : (this.rightButtonDisabled = false);\n    }\n  }\n\n  assignPictureToPortfolioPicture(pictures: string[]) {\n    this.portfolioPictures.map((item) => ({\n      ...item,\n      picture: (item.picture = pictures[this.portfolioPictures.indexOf(item)]),\n    }));\n    this.activePortfolioPicture = this.portfolioPictures[0];\n  }\n\n  carouselMovesForward() {\n    this.buttons.unshift(this.buttons[2]);\n    this.buttons.pop();\n\n    const pictures = this.portfolioPictures.map((item) => item.picture);\n    pictures.unshift(pictures[2]);\n    pictures.pop();\n\n    this.assignPictureToPortfolioPicture(pictures);\n\n    this.disableButtons();\n  }\n\n  carouselMovesBackwards() {\n    const pictures = this.portfolioPictures.map((item) => item.picture);\n    const firstPicture = pictures.shift();\n    pictures.push(firstPicture!);\n\n    this.assignPictureToPortfolioPicture(pictures);\n\n    this.disableButtons();\n    console.log(this.leftButtonDisabled);\n  }\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\nimport {\n  carouselPageImage,\n  PortfolioPicture,\n  PortfolioPictures,\n} from 'src/app/data/pictures';\nimport { titlePortfolio } from 'src/app/data/titles';\n\n@Component({\n  selector: 'app-portfolio-section',\n  templateUrl: './portfolio-section.component.html',\n  styleUrls: ['./portfolio-section.component.scss'],\n})\nexport class PortfolioSectionComponent {\n  @Input()\n  screen!: string;\n  portfolioPictures = PortfolioPictures;\n  buttons = carouselPageImage;\n  activePortfolioPicture!: PortfolioPicture;\n  leftButtonDisabled = true;\n  rightButtonDisabled = false;\n  arrowLeft = '../../../assets/images/arrow-left.png';\n  arrowRight = '../../../assets/images/arrow-right.png';\n  round = true;\n\n  titlePortfolio = titlePortfolio.title;\n\n  disableButtons() {\n    if (this.screen === 'smallScreen') {\n      this.activePortfolioPicture.picture ===\n        '../../../assets/images/carousel_image_1.png'\n        ? (this.leftButtonDisabled = true)\n        : (this.leftButtonDisabled = false);\n      this.activePortfolioPicture.picture ===\n      '../../../assets/images/carousel_image_2.png'\n        ? (this.rightButtonDisabled = true)\n        : (this.rightButtonDisabled = false);\n    }\n  }\n\n  assignPictureToPortfolioPicture(pictures: string[]) {\n    this.portfolioPictures.map((item) => ({\n      ...item,\n      picture: (item.picture = pictures[this.portfolioPictures.indexOf(item)]),\n    }));\n    this.activePortfolioPicture = this.portfolioPictures[0];\n  }\n\n  carouselMovesForward() {\n    this.buttons.unshift(this.buttons[2]);\n    this.buttons.pop();\n\n    const pictures = this.portfolioPictures.map((item) => item.picture);\n    pictures.unshift(pictures[2]);\n    pictures.pop();\n\n    this.assignPictureToPortfolioPicture(pictures);\n\n    this.disableButtons();\n  }\n\n  carouselMovesBackwards() {\n    const pictures = this.portfolioPictures.map((item) => item.picture);\n    const firstPicture = pictures.shift();\n    pictures.push(firstPicture!);\n\n    this.assignPictureToPortfolioPicture(pictures);\n\n    this.disableButtons();\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -1304,11 +1292,11 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<section>\n  <div class=\"portfolio__wrapper\">\n    <div class=\"title__wrapper\" [ngSwitch]=\"screen\">\n      <app-title\n        *ngSwitchCase=\"'mediumScreen'\"\n        size=\"medium\"\n        [label]=\"titlePortfolio\"\n      ></app-title>\n      <app-title\n        *ngSwitchCase=\"'smallScreen'\"\n        size=\"extra-small\"\n        [label]=\"titlePortfolio\"\n      ></app-title>\n      <app-title\n        *ngSwitchDefault\n        size=\"medium\"\n        [label]=\"titlePortfolio\"\n      ></app-title>\n      <img\n        class=\"picture circles__picture\"\n        src=\"../../../assets/images/circles.png\"\n        alt=\"circles\"\n      />\n    </div>\n    <div class=\"portfolio-carousel__container\">\n      <div class=\"portfolio-carousel__wrapper\">\n        <div *ngFor=\"let portfolioPicture of portfolioPictures\">\n          <app-image-card\n            [class]=\"portfolioPicture.class\"\n            [picture]=\"portfolioPicture.picture\"\n          ></app-image-card>\n        </div>\n      </div>\n    </div>\n    <div\n      (click)=\"carouselMovesForward()\"\n      *ngIf=\"screen !== 'smallScreen'\"\n      class=\"carousel__buttons\"\n    >\n      <div *ngFor=\"let button of buttons\">\n        <img src=\"{{ button }}\" alt=\"button\" />\n      </div>\n    </div>\n    <div\n      class=\"carousel__buttons carousel__buttons--round\"\n      *ngIf=\"screen === 'smallScreen'\"\n    >\n      <app-button\n        class=\"carousel-control__button\"\n        (click)=\"carouselMovesBackwards()\"\n        [round]=\"true\"\n        size=\"extra-small\"\n        [disabled]=\"leftButtonDisabled\"\n        ><img class=\"arrow\" [src]=\"arrowLeft\"\n      /></app-button>\n      <app-button\n        class=\"carousel-control__button\"\n        (click)=\"carouselMovesForward()\"\n        [round]=\"true\"\n        size=\"extra-small\"\n        [disabled]=\"rightButtonDisabled\"\n        ><img class=\"arrow\" [src]=\"arrowRight\"\n      /></app-button>\n    </div>\n    <img\n      class=\"picture zigzag__picture\"\n      src=\"../../../assets/images/zigzag.png\"\n      alt=\"zigzag\"\n    />\n  </div>\n</section>\n"
+            "templateData": "<section>\n  <div class=\"portfolio__wrapper\">\n    <div class=\"title__wrapper\" [ngSwitch]=\"screen\">\n      <app-title\n        *ngSwitchCase=\"'mediumScreen'\"\n        size=\"medium\"\n        [label]=\"titlePortfolio\"\n      ></app-title>\n      <app-title\n        *ngSwitchCase=\"'smallScreen'\"\n        size=\"extra-small\"\n        [label]=\"titlePortfolio\"\n      ></app-title>\n      <app-title\n        *ngSwitchDefault\n        size=\"medium\"\n        [label]=\"titlePortfolio\"\n      ></app-title>\n      <img\n        class=\"picture circles__picture\"\n        src=\"../../../assets/images/circles.png\"\n        alt=\"circles\"\n      />\n    </div>\n    <div class=\"portfolio-carousel__container\">\n      <div class=\"portfolio-carousel__wrapper\">\n        <div *ngFor=\"let portfolioPicture of portfolioPictures\">\n          <app-image-card\n            [class]=\"portfolioPicture.class\"\n            [picture]=\"portfolioPicture.picture\"\n          ></app-image-card>\n        </div>\n      </div>\n    </div>\n    <div\n      (click)=\"carouselMovesForward()\"\n      *ngIf=\"screen !== 'smallScreen'\"\n      class=\"carousel__buttons\"\n    >\n      <div *ngFor=\"let button of buttons\">\n        <img src=\"{{ button }}\" alt=\"button\" />\n      </div>\n    </div>\n    <div\n      class=\"carousel__buttons carousel__buttons--round\"\n      *ngIf=\"screen === 'smallScreen'\"\n    >\n      <app-button\n        class=\"carousel-control__button\"\n        (click)=\"carouselMovesBackwards()\"\n        [round]=\"round\"\n        size=\"extra-small\"\n        [disabled]=\"leftButtonDisabled\"\n        ><img class=\"arrow\" [src]=\"arrowLeft\"\n      /></app-button>\n      <app-button\n        class=\"carousel-control__button\"\n        (click)=\"carouselMovesForward()\"\n        [round]=\"round\"\n        size=\"extra-small\"\n        [disabled]=\"rightButtonDisabled\"\n        ><img class=\"arrow\" [src]=\"arrowRight\"\n      /></app-button>\n    </div>\n    <img\n      class=\"picture zigzag__picture\"\n      src=\"../../../assets/images/zigzag.png\"\n      alt=\"zigzag\"\n    />\n  </div>\n</section>\n"
         },
         {
             "name": "PrivacyPolicyPageComponent",
-            "id": "component-PrivacyPolicyPageComponent-54e29c3ee8ab846d924e1ae6fe0d5372d2e521c351837f01b3ea9d0e880ae9806d36fc52b1ce4e08783a3cfa341144efbca2053335056c2d221c8b2b30b7ae05",
+            "id": "component-PrivacyPolicyPageComponent-167effa3a8ca209bbeae7388d821e2e729680716888abab1c49b8681dcc66221b8cad79bdf2f16b2b2836dc654983ce2496b954f56ef31123a4e2ccbdb783eb3",
             "file": "src/app/components/pages/privacy-policy-page/privacy-policy-page.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1316,29 +1304,15 @@
             "outputs": [],
             "providers": [],
             "selector": "app-privacy-policy-page",
-            "styleUrls": [
-                "./privacy-policy-page.component.scss"
-            ],
+            "styleUrls": [],
             "styles": [],
-            "templateUrl": [
-                "./privacy-policy-page.component.html"
-            ],
+            "template": "<app-header></app-header>",
+            "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [],
             "outputsClass": [],
             "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 12,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
+            "methodsClass": [],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -1346,27 +1320,10 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-privacy-policy-page',\n  templateUrl: './privacy-policy-page.component.html',\n  styleUrls: ['./privacy-policy-page.component.scss']\n})\nexport class PrivacyPolicyPageComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-privacy-policy-page',\n  template: `<app-header></app-header>`\n})\nexport class PrivacyPolicyPageComponent {}\n",
             "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": "",
-                    "styleUrl": "./privacy-policy-page.component.scss"
-                }
-            ],
-            "stylesData": "",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "args": [],
-                "line": 8
-            },
-            "implements": [
-                "OnInit"
-            ],
-            "templateData": "<p>privacy-policy-page works!</p>\n"
+            "styleUrlsData": "",
+            "stylesData": ""
         },
         {
             "name": "ServiceImageComponent",
@@ -1411,7 +1368,7 @@
         },
         {
             "name": "ServicePageComponent",
-            "id": "component-ServicePageComponent-74d27c16bb090625a78a3cadfba32381f8227d36d888c54adc6e5693e451b57c57abc868033edc40486d459652614eea0db77b26835f3a4f880a0647473c43bb",
+            "id": "component-ServicePageComponent-f98dc806f9554195afc3999b7d439a98e5f42646d816da465f467e3546736571e204cd498f8fd2d117118100eb746891b4ec96ee72184a60d0ce3a12ecae35ff",
             "file": "src/app/components/pages/service-page/service-page.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1427,18 +1384,7 @@
             "inputsClass": [],
             "outputsClass": [],
             "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 11,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
+            "methodsClass": [],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -1446,21 +1392,10 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-service-page',\n  template: `<app-header></app-header>`,\n})\nexport class ServicePageComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-service-page',\n  template: `<app-header></app-header>`,\n})\nexport class ServicePageComponent {}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
-            "stylesData": "",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "args": [],
-                "line": 7
-            },
-            "implements": [
-                "OnInit"
-            ]
+            "stylesData": ""
         },
         {
             "name": "ServicesComponent",
@@ -1668,7 +1603,7 @@
         },
         {
             "name": "SupportPageComponent",
-            "id": "component-SupportPageComponent-a7f30e25eff18a7c3d3959da359ee91051d0de3b042a288c1339d4accff8e193f897d13c6437258fe17bae4a623ee4a84d1259313bfe540fca0e6ceb196a421e",
+            "id": "component-SupportPageComponent-ca736c44ba8b603ed4e52a0cad95f90a2a6589c0da7916569d29256fca44b9987e4fc133534f1b7cf20a7a81cf8006907f9fcce05f4a033448b6b08a1fc37c31",
             "file": "src/app/components/pages/support-page/support-page.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1676,29 +1611,15 @@
             "outputs": [],
             "providers": [],
             "selector": "app-support-page",
-            "styleUrls": [
-                "./support-page.component.scss"
-            ],
+            "styleUrls": [],
             "styles": [],
-            "templateUrl": [
-                "./support-page.component.html"
-            ],
+            "template": "<app-header></app-header>",
+            "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [],
             "outputsClass": [],
             "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 12,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
+            "methodsClass": [],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -1706,31 +1627,14 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-support-page',\n  templateUrl: './support-page.component.html',\n  styleUrls: ['./support-page.component.scss']\n})\nexport class SupportPageComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-support-page',\n  template: `<app-header></app-header>`\n})\nexport class SupportPageComponent {}\n",
             "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": "",
-                    "styleUrl": "./support-page.component.scss"
-                }
-            ],
-            "stylesData": "",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "args": [],
-                "line": 8
-            },
-            "implements": [
-                "OnInit"
-            ],
-            "templateData": "<p>support-page works!</p>\n"
+            "styleUrlsData": "",
+            "stylesData": ""
         },
         {
             "name": "TermsAndConditionsPageComponent",
-            "id": "component-TermsAndConditionsPageComponent-a1dcbe8dc16be3cfe4bc09adacbdec9d2d383fe2dfb2d25cfffbc3263cf7e69ec15f10c653bef863b3b0e9d595b6aa3c4c4cad11acc562942f9847fe336623c2",
+            "id": "component-TermsAndConditionsPageComponent-1cc962ea2ab4dac4faff26b7e493f4708952ccb4d153744d57418c0109fa77cb9953d94e61b587e88f1ea16d9216dda8dac8e57c211ed62c0af5fb1c08fea57e",
             "file": "src/app/components/pages/terms-and-conditions-page/terms-and-conditions-page.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1738,29 +1642,15 @@
             "outputs": [],
             "providers": [],
             "selector": "app-terms-and-conditions-page",
-            "styleUrls": [
-                "./terms-and-conditions-page.component.scss"
-            ],
+            "styleUrls": [],
             "styles": [],
-            "templateUrl": [
-                "./terms-and-conditions-page.component.html"
-            ],
+            "template": "<app-header></app-header>",
+            "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [],
             "outputsClass": [],
             "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 12,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
+            "methodsClass": [],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -1768,27 +1658,10 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-terms-and-conditions-page',\n  templateUrl: './terms-and-conditions-page.component.html',\n  styleUrls: ['./terms-and-conditions-page.component.scss']\n})\nexport class TermsAndConditionsPageComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-terms-and-conditions-page',\n  template: `<app-header></app-header>`\n})\nexport class TermsAndConditionsPageComponent{}\n",
             "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": "",
-                    "styleUrl": "./terms-and-conditions-page.component.scss"
-                }
-            ],
-            "stylesData": "",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "args": [],
-                "line": 8
-            },
-            "implements": [
-                "OnInit"
-            ],
-            "templateData": "<p>terms-and-conditions-page works!</p>\n"
+            "styleUrlsData": "",
+            "stylesData": ""
         },
         {
             "name": "TextComponent",
@@ -2280,6 +2153,16 @@
                 "defaultValue": "[\n  '../../../assets/images/carousel-page-image-1.png',\n  '../../../assets/images/carousel-page-image-2.png',\n  '../../../assets/images/carousel-page-image-3.png',\n]"
             },
             {
+                "name": "Contact",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/pages/home-page/sections/contact-section/contact-section.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "context",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -2393,7 +2276,7 @@
                 "name": "Large",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/reusable/text/text.stories.ts",
+                "file": "src/app/components/reusable/subtitle/subtitle.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2403,7 +2286,7 @@
                 "name": "Large",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/reusable/subtitle/subtitle.stories.ts",
+                "file": "src/app/components/reusable/text/text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2562,7 +2445,7 @@
                 "name": "Small",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/reusable/text/text.stories.ts",
+                "file": "src/app/components/reusable/subtitle/subtitle.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2572,7 +2455,7 @@
                 "name": "Small",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/reusable/subtitle/subtitle.stories.ts",
+                "file": "src/app/components/reusable/text/text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2632,16 +2515,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/reusable/text/text.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<TextComponent>",
-                "defaultValue": "(args: TextComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/components/reusable/logo/logo.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2672,6 +2545,16 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/components/reusable/text/text.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TextComponent>",
+                "defaultValue": "(args: TextComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/components/reusable/title/title.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2687,6 +2570,16 @@
                 "deprecationMessage": "",
                 "type": "Story<LinkComponent>",
                 "defaultValue": "(args: LinkComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/pages/home-page/sections/contact-section/contact-section.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ContactSectionComponent>",
+                "defaultValue": "(args: ContactSectionComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -2712,16 +2605,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/pages/home-page/sections/why-choose-enver-section/why-choose-enver-section.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<WhyChooseEnverSectionComponent>",
-                "defaultValue": "(args: WhyChooseEnverSectionComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/components/pages/home-page/sections/portfolio-section/portfolio-section.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2732,11 +2615,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/pages/home-page/sections/services-section/services-card/service-card.stories.ts",
+                "file": "src/app/components/pages/home-page/sections/why-choose-enver-section/why-choose-enver-section.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<ServicesComponent>",
-                "defaultValue": "(args: ServicesComponent) => ({\n  props: args,\n})"
+                "type": "Story<WhyChooseEnverSectionComponent>",
+                "defaultValue": "(args: WhyChooseEnverSectionComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -2747,6 +2630,16 @@
                 "deprecationMessage": "",
                 "type": "Story<ServiceImageComponent>",
                 "defaultValue": "(args: ServiceImageComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/pages/home-page/sections/services-section/services-card/service-card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ServicesComponent>",
+                "defaultValue": "(args: ServicesComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -2991,6 +2884,28 @@
                     "defaultValue": "[\n  {\n    picture: '../../../assets/images/carousel_image_1.png',\n    class: 'carousel__item carousel__item-upper',\n  },\n  {\n    picture: '../../../assets/images/carousel_image_2.png',\n    class: 'carousel__item carousel__item-middle',\n  },\n  {\n    picture: '../../../assets/images/carousel_image_3.png',\n    class: 'carousel__item carousel__item-lower',\n  },\n]"
                 }
             ],
+            "src/app/components/pages/home-page/sections/contact-section/contact-section.stories.ts": [
+                {
+                    "name": "Contact",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/pages/home-page/sections/contact-section/contact-section.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/pages/home-page/sections/contact-section/contact-section.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ContactSectionComponent>",
+                    "defaultValue": "(args: ContactSectionComponent) => ({\n  props: args,\n})"
+                }
+            ],
             "src/test.ts": [
                 {
                     "name": "context",
@@ -3198,6 +3113,38 @@
                     "defaultValue": "(args: ImageCardComponent) => ({\n  props: args,\n})"
                 }
             ],
+            "src/app/components/reusable/subtitle/subtitle.stories.ts": [
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/reusable/subtitle/subtitle.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/reusable/subtitle/subtitle.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/reusable/subtitle/subtitle.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<SubtitleComponent>",
+                    "defaultValue": "(args: SubtitleComponent) => ({\n  props: args,\n})"
+                }
+            ],
             "src/app/components/reusable/text/text.stories.ts": [
                 {
                     "name": "Large",
@@ -3238,38 +3185,6 @@
                     "deprecationMessage": "",
                     "type": "Story<TextComponent>",
                     "defaultValue": "(args: TextComponent) => ({\n  props: args,\n})"
-                }
-            ],
-            "src/app/components/reusable/subtitle/subtitle.stories.ts": [
-                {
-                    "name": "Large",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/reusable/subtitle/subtitle.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Small",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/reusable/subtitle/subtitle.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/reusable/subtitle/subtitle.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<SubtitleComponent>",
-                    "defaultValue": "(args: SubtitleComponent) => ({\n  props: args,\n})"
                 }
             ],
             "src/app/components/reusable/logo/logo.stories.ts": [
@@ -3663,7 +3578,7 @@
                 "linktype": "component",
                 "name": "AboutPageComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -3681,7 +3596,27 @@
                 "linktype": "component",
                 "name": "ContactSectionComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/4",
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/pages/home-page/sections/contact-section/contact-section.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Contact",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/pages/home-page/sections/contact-section/contact-section.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -3748,7 +3683,7 @@
                 "linktype": "component",
                 "name": "PortfolioSectionComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/14",
+                "coverageCount": "0/15",
                 "status": "low"
             },
             {
@@ -3893,7 +3828,7 @@
                 "linktype": "component",
                 "name": "OurProjectPageComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -3902,7 +3837,7 @@
                 "linktype": "component",
                 "name": "PrivacyPolicyPageComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -3911,7 +3846,7 @@
                 "linktype": "component",
                 "name": "ServicePageComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -3920,7 +3855,7 @@
                 "linktype": "component",
                 "name": "SupportPageComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -3929,7 +3864,7 @@
                 "linktype": "component",
                 "name": "TermsAndConditionsPageComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {

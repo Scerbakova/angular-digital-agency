@@ -16,7 +16,7 @@ import { footer } from 'src/app/data/navigation';
     ></app-navigation>
     </ng-template>
     <app-text
-      textLabel="© 2020 Enver, All Rights Reserved"
+      textLabel="© 2022 Enver, All Rights Reserved"
       size="small"
     ></app-text>
   </footer>`,

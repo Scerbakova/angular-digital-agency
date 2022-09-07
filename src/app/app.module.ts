@@ -28,6 +28,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SupportPageComponent } from './components/pages/support-page/support-page.component';
 import { PrivacyPolicyPageComponent } from './components/pages/privacy-policy-page/privacy-policy-page.component';
 import { TermsAndConditionsPageComponent } from './components/pages/terms-and-conditions-page/terms-and-conditions-page.component';
+import { EmptyPageComponent } from './components/reusable/empty-page/empty-page.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { TermsAndConditionsPageComponent } from './components/pages/terms-and-co
     SupportPageComponent,
     PrivacyPolicyPageComponent,
     TermsAndConditionsPageComponent,
+    EmptyPageComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,19 @@
+<div
+  style="
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+    row-gap: 50px;
+  "
+  class="wrapper"
+>
+  <app-button [routerLink]="'/home'" [primary]="true" [label]="'Back to home'"></app-button>
+  <app-title
+    [label]="'This page is here just to show you that router works'"
+  ></app-title>
+  <app-text
+    [textLabel]="'Please, press the button above, to return'"
+  ></app-text>
+</div>
