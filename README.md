@@ -1,27 +1,19 @@
-# AngularDigitalAgency
+# Digital agency website design
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
+This design was taken from Figma free designs and made using Angular framework
 
-## Development server
+In addition there is a storybook added to this project
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Design is responsive
 
-## Code scaffolding
+Also, you will find here a bit customised video player with sample video and carousel to make this design more alive.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You can try out this website here: https://stupendous-jelly-1f0ebd.netlify.app
 
-## Build
+![Untitled](https://user-images.githubusercontent.com/97510856/188832763-55c60450-3a63-4b90-9d80-0fa055a143f7.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![image](https://user-images.githubusercontent.com/97510856/188826932-63c10758-892b-45e4-8f2b-526f004a5a02.png)
 
-## Running unit tests
+![image](https://user-images.githubusercontent.com/97510856/188826249-902ab3b1-8677-4dec-bcf0-27c207dfb005.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![image](https://user-images.githubusercontent.com/97510856/188829550-56d00c6d-37b1-4614-b675-2831d9397ff7.png)
